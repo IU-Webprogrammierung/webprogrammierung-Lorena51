@@ -1,5 +1,5 @@
 <!-- 
-picture 
+
 
 who we are
 where we are 
@@ -11,3 +11,184 @@ when is our next event
 our last event "Momo"
 
  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header Component ?  -->
+    <main>
+      <section id="hero">
+        <h1>Jugendtheater Neuburg</h1>
+        <img
+          src="gruppenbild.png"
+          alt="Gruppenbild Jugendtheater bei der Aufführung Momo 2025"
+          height="50"
+        />
+        <p>
+          Das Jugendtheater Neuburg trifft sich jeden Mittwoch um 18:00 Uhr im
+          Theater Neuburg. Wir sind eine Gruppe von Theaterbegeisterten, die
+          gemeinsam Stücke erarbeiten und aufführen. Unser Ziel ist es,
+          Jugendlichen die Möglichkeit zu geben, ihre Kreativität auszuleben und
+          ihre schauspielerischen Fähigkeiten zu entwickeln.
+        </p>
+      </section>
+      <section id="events">
+        <h2>Kommende Veranstaltungen</h2>
+        <p>Kommen Sie vorbei und erleben sie ein paar unterhaltsame Stunden</p>
+        <p>Wir freuen uns auf Ihren Besuch!</p>
+        <div class="event-card">
+          <h3>Event 1</h3>
+          <p>Datum: 15. Mai 2025</p>
+          <p>Uhrzeit: 18:00 Uhr</p>
+          <address>Ort: Theater Neuburg</address>
+          <p>Eintritt frei</p>
+          <p>
+            Beschreibung: Ein spannendes Theaterstück, das die Zuschauer fesseln
+            wird.
+          </p>
+        </div>
+        <div class="event-card">
+          <h3>Event 2</h3>
+          <p>Datum: 15. Mai 2025</p>
+          <p>Uhrzeit: 18:00 Uhr</p>
+          <address>Ort: Theater Neuburg</address>
+          <p>
+            Tickets unter
+            <a href="https://www.theater-neuburg.de">theater-neuburg.de</a>
+          </p>
+          <p>Eintritt: 10 Euro</p>
+          <p>
+            Beschreibung: Ein spannendes Theaterstück, das die Zuschauer fesseln
+            wird.
+          </p>
+        </div>
+      </section>
+      <section id="services">
+        <h2>What we do</h2>
+        <div class="service-card">
+          <h3>Impro</h3>
+          <p>
+            Wir spielen regelmäßig improviationstheater. Dabei verbessert man
+            die spontanität, das zusammenspiel und aufeinander achten.
+          </p>
+          <button>mehr über Impro erfahren</button>
+        </div>
+        <div class="service-card">
+          <h3>Theater Grundlagen</h3>
+          <p>
+            Durch unsere ausgebildeten Theaterpädagogen können wir die
+            Theatergrundlagen weiter geben und vertiefen.
+          </p>
+          <button>mehr über die Grundlagen erfahren</button>
+        </div>
+        <div class="service-card">
+          <h3>Aufführungen</h3>
+          <p>
+            Jährlich wird ein Jugendstück auf die Beine gestellt und von der
+            Jugend selbst organisiert
+          </p>
+          <button>zu unserer letzen Aufführung "Momo"</button>
+        </div>
+        <div class="service-card">
+          <h3>Wöchentliche Treffen</h3>
+          <p>
+            Das Jugendtheater trifft sich wöchentlich in den Proberäumen um.
+          </p>
+          <!-- <button>endecke unsere Proberäume</button> -->
+        </div>
+      </section>
+
+      <section id="location">
+        <h2>Box 15</h2>
+        <p>Unsere Proberäume und kleine Bühne</p>
+        <div class="gallery">
+          <img src="proberaum1.jpg" alt="Proberaum 1" height="50" />
+          <img src="proberaum2.jpg" alt="Proberaum 2" height="50" />
+          <img src="proberaum3.jpg" alt="Proberaum 3" height="50" />
+        </div>
+        <p>Wir proben jeden Mittwoch von 19:30 Uhr bis 22:00</p>
+        <p>
+          Alle Jugendlichen im Alter von 14 bis 27 Jahren sind herzlich
+          eingeladen, vorbeizukommen und Teil unserer Gruppe zu werden. Wir
+          freuen uns auf neue Gesichter und gemeinsames Theatererleben.
+        </p>
+        <address aria-label="Adresse von Box 15">
+          <strong>Jugendtheater Neuburg</strong><br />
+          <strong>Box 15</strong><br />
+          Straße 78,5<br />
+          86633 Neuburg
+        </address>
+        <div class="social-media">
+          <h2>Follow us</h2>
+          <a
+            href="https://www.instagram.com/jugendtheater_neuburg/"
+            target="_blank"
+            >Instagram</a
+          >
+          <a
+            href="https://www.facebook.com/jugendtheaterneuburg"
+            target="_blank"
+            >Facebook</a
+          >
+        </div>
+        <div>
+          <!-- Image map for directions (Anfahrt) -->
+          <h3>Anfahrt</h3>
+          <img
+            src="anfahrt_karte.jpg"
+            alt="Anfahrt zur Box 15"
+            usemap="#anfahrtmap"
+            height="200"
+          />
+          <map name="anfahrtmap">
+            <area
+              shape="rect"
+              coords="20,30,120,130"
+              href="https://goo.gl/maps/yourlocation1"
+              alt="Parkplatz"
+              title="Parkplatz"
+            />
+            <area
+              shape="circle"
+              coords="180,80,30"
+              href="https://goo.gl/maps/yourlocation2"
+              alt="Eingang"
+              title="Eingang"
+            />
+            <area
+              shape="poly"
+              coords="140,150,160,170,180,160,170,140"
+              href="https://goo.gl/maps/yourlocation3"
+              alt="Bushaltestelle"
+              title="Bushaltestelle"
+            />
+          </map>
+          <p>
+            Klicken Sie auf die markierten Bereiche der Karte für weitere
+            Informationen zur Anfahrt.
+          </p>
+        </div>
+      </section>
+
+      <section id="last-event">
+        <h2>Our last events</h2>
+        <div class="last-event-card">
+          <h3>Event 1</h3>
+          <p>Ostern 2025</p>
+          <address>Stadttheater Neuburg</address>
+          <img src="event1.jpg" alt="Plakat Momo 2025" height="50" />
+          <p>
+            Beschreibung: Ein spannendes Theaterstück, das die Zuschauer fesseln
+            wird.
+          </p>
+          <button>mehr erfahren</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
