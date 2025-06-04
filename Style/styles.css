@@ -1,12 +1,122 @@
 body {
     background-color: #f0f0f0;
     font-family: Arial;
-    color: deeppink;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1em;
     
     margin: 0;
-    padding: 20px;
+    
 }
 h1 {
     color: deeppink;
     font-size: 2em;
+    text-align: center;
+}
+
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+}   
+p
+{
+font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-top: #333 solid 1px;
+    border-bottom: #333 solid 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+
+    padding: 5%;
+}
+
+/* move to the stylesheet for page 2 */
+/* Warm-up (WUP) styles for page_2_acting using .warm-up classes */
+.warm-up {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+    & .p {
+        font-size: 1em;
+       
+    }
+
+    & .details {
+        max-width: 480px;
+        flex: 1;
+        font-size: 1em;
+        line-height: 1.7;
+
+        &  h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: deeppink;
+            text-align: left;
+            letter-spacing: 1px;
+        }
+
+        & ul {
+            margin-left: 1em;
+        }
+    }
+
+    & .examples {
+        display: flexbox;
+        float: column;
+        column-count: 2;
+        gap: 24px;
+        flex: 1;
+        border-radius: 8px;
+        background: none;
+        padding: 0;
+   
+
+        & .warm-up-example {
+
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            margin-bottom: 0;
+            max-width: 300px;
+            padding: 20px;
+            margin-bottom: 20px;
+
+            font-size: 1em;
+            line-height: 1.6;
+       
+
+            & h3 {
+                font-size: 1em;
+                font-weight: 600;
+                color: #333;
+                margin-top: 0;
+            }
+        } 
+    }
+
+
+    @media (max-width: 900px) {
+        .warm-up {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .warm-up .details,
+        .warm-up-example {
+            max-width: 100%;
+        }
+    }
 }
