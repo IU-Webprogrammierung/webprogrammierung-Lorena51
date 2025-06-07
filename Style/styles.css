@@ -1,3 +1,12 @@
+:root {
+    --color-primary: deeppink;
+    --color-secondary: #333;
+    --color-background: #f0f0f0;
+    --color-text: rgba(0, 0, 0, 0.8);
+    --color-header-bg: #fff;
+    --color-link-hover: deeppink;
+}
+
 body {
     background-color: #f0f0f0;
     font-family: Arial;
@@ -119,4 +128,27 @@ font-size: 1em;
             max-width: 100%;
         }
     }
+}
+
+/* End of warm-up styles for page_2_acting */
+/* Add any additional styles for the page_4_diy_styles */
+
+#local-navigation-diy {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 10px 20px;
+    list-style: none;
+    gap: 10px;   
+
+    & a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+         
+       &:hover {
+                color: var(--color-link-hover);               
+            }
+    }  
 }

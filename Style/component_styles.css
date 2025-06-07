@@ -1,0 +1,84 @@
+:root {
+    --color-primary: green;
+    --color-secondary: #333;
+    --color-background: #f0f0f0;
+    --color-text: rgba(0, 0, 0, 0.8);
+    --color-header-bg: #fff;
+    --color-link-hover: deeppink;
+}
+
+
+.logo{
+    display: flex;
+        flex-direction: row;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    
+}
+
+.a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.global-nav {
+    display: flex;
+    padding: 0;
+    margin: 10px 20px;   
+
+  
+    & #main-nav-links {    
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 10px 20px; 
+        list-style: none;
+        gap: 20px;
+        position: relative;
+
+        & .selected > a {
+            color: var(--color-link-hover);
+        } 
+
+        & a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            font-size: 16px;
+    
+                &:hover {
+                    color: var(--color-link-hover);
+                    transition: color 0.2s;                  
+                } 
+                        
+                /* ToDo Set selected style for the current page */
+               
+            }
+        & ul {   
+            list-style: none;
+            flex-direction: column;
+            display: none;
+            margin: 10px 0px;
+            position: absolute;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+
+        & li {
+            position: relative;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+
+        & li:hover > ul {
+            display: flex;
+        }
+
+    }
+}
+
+
+
+
