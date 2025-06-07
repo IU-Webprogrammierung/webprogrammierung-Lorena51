@@ -51,12 +51,19 @@ button {
     &:hover {
         background-color: var(--color-btn-hover);
     }
-    & a{
-        color: #fff;
-        text-decoration: none;
+      
+}
+a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 16px;
+
+    &:hover {
+        color: var(--color-link-hover);
+        transition: color 0.2s;
     }
 }
-
 .main-header {
     text-align: center;
     margin-bottom: 20px;
@@ -181,9 +188,7 @@ button {
             margin-left: 10px;
          
         }
-    }
-           
-
+    }         
         
         & .service-card::after {
             content: "";
@@ -221,6 +226,31 @@ button {
             border-radius: 24px 24px 0 24px;
             background: #f8e6f2;
         }
+}
+
+.last-event-card{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin-bottom: 40px;
+
+    & .event-info {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    & figure {
+        grid-column: 2;
+        height: 100%;
+   
+    }
 }
 /* move to the stylesheet for page 2 */
 /* Warm-up (WUP) styles for page_2_acting using .warm-up classes */
