@@ -22,14 +22,12 @@ h1 {
     text-align: center;
 }
 
-
 h2 {
     color: #333;
     font-size: 1.5em;
 }   
-p
-{
-font-size: 1em;
+p {
+    font-size: 1em;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -131,6 +129,32 @@ font-size: 1em;
 }
 
 /* End of warm-up styles for page_2_acting */
+
+/* styles for page_4_actors */
+
+#actor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+   
+    & .actor-card{
+        background: #fff;
+        border-radius: 8px;
+        list-style:  none;
+        & img{
+            width: 280px;
+            height: auto;
+            border-radius: 8px;
+        }
+        & .actor-details {
+            padding: 10px;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+    }
+}
+
 /* Add any additional styles for the page_4_diy_styles */
 
 #local-navigation-diy {
