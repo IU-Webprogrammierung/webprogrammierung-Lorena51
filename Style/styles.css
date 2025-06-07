@@ -165,7 +165,7 @@ a{
     margin: 40px 0;
 
     & .service-card {
-        max-width: 420px;
+        max-width: 50%;
         width: 100%;
         background: #fff;
         border-radius: 24px;
@@ -180,11 +180,12 @@ a{
         position: relative;
         text-align: left;
         min-height: 80px;
+        gap: 16px;;
         
-        & h3 {
-           width: 30%;
-         }
-        & p {
+        /* & h3 {
+           width:300px;
+         } */
+        & p {            
             margin-left: 10px;
          
         }
@@ -207,13 +208,21 @@ a{
         }
 
         & .service-card:nth-child(even)::after {
-            left: auto;
+            content: "";
+            position: absolute;
+            bottom: 0;
             right: 32px;
-            border-top-color: #f8e6f2;
+            left:auto;
+            width: 0;
+            height: 0;
+            border: 18px solid transparent;
             border-left: 0;
             border-right: 18px solid transparent;
+            border-top-color: #f8e6f2;
+            border-bottom: 0;
+            border-right: -9px;
             margin-left: 0;
-            margin-right: -9px;
+            margin-bottom: -18px;              
         }
 
         & .service-card:not(:last-child) {
@@ -222,8 +231,6 @@ a{
 
  
         & .service-card:nth-child(even) {
-            align-self: flex-end;
-            border-radius: 24px 24px 0 24px;
             background: #f8e6f2;
         }
 }
@@ -252,6 +259,126 @@ a{
    
     }
 }
+
+/* style for page_1  */
+#Infos{
+        background-image: url('/img/Momo/Hintergrund website.png'); 
+        background-size: cover; 
+        background-position: bottom; 
+        width: 100%; 
+        height: 500px; 
+
+        & h2{
+            color: #fff;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+#kurzbeschreibung {     
+
+    & #momo-regie{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        & img{
+            width: 45%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+            order: 1;
+        }
+    }
+    & #theater-buehne{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        & img {
+            width: 45%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            order: 1;
+        }
+
+        & figure {
+            width: 45%;
+            order: 2;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            background: transparent;
+        }
+
+        
+    }
+    & #momo-groupimage{
+
+    width: 100%;
+    height: auto;
+    align-content: center;
+    margin : 0 ;
+            margin-inline: 0;
+        & img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            align-content: center;
+        }
+        & figcaption {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 20px;
+        }
+       
+    }
+}  
+
+#medien {  
+    & newspaper-articles{
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+
+        & .newspaper-article {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 25%;
+            align-items: center;
+
+            & img {
+                border-radius: 12px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    & podcast {
+    margin-top: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;         
+        & audio {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }     
+}
+
+
+
 /* move to the stylesheet for page 2 */
 /* Warm-up (WUP) styles for page_2_acting using .warm-up classes */
 .warm-up {
