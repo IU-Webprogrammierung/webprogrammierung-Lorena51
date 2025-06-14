@@ -1,0 +1,180 @@
+/* Move this styles to the stylsheet for page0 */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+
+
+    & #group-photo {
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    & hero-text {
+        width: 50%;
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-left: 32px;
+        color: #333;
+        align-items: center;
+        text-align: center;
+
+        & img {
+            border-radius: 25px;
+        }
+    }
+}
+
+.info-text {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.event-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
+
+    & h3 {
+        grid-column: 1 / span 2;
+        margin: 0;
+    }
+
+    & event-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    & ticket-info {
+        width: 100%;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        grid-column: 2;
+        grid-row: 2;
+        padding-right: 10px;
+    }
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 40px 0;
+
+    & .service-card {
+        max-width: 50%;
+        width: 100%;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+        padding: 24px 32px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1em;
+        color: #333;
+        position: relative;
+        text-align: left;
+        min-height: 80px;
+        gap: 16px;
+        ;
+
+        /* & h3 {
+           width:300px;
+         } */
+        & p {
+            margin-left: 10px;
+
+        }
+    }
+
+    & .service-card::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 32px;
+        width: 0;
+        height: 0;
+        border: 18px solid transparent;
+        border-top-color: #fff;
+        border-bottom: 0;
+        border-right: 0;
+        margin-left: -9px;
+        margin-bottom: -18px;
+        z-index: 1;
+    }
+
+    & .service-card:nth-child(even)::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+        left: auto;
+        width: 0;
+        height: 0;
+        border: 18px solid transparent;
+        border-left: 0;
+        border-right: 18px solid transparent;
+        border-top-color: #f8e6f2;
+        border-bottom: 0;
+        border-right: -9px;
+        margin-left: 0;
+        margin-bottom: -18px;
+    }
+
+    & .service-card:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+
+    & .service-card:nth-child(even) {
+        background: #f8e6f2;
+    }
+}
+
+.last-event-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    margin-bottom: 40px;
+
+    & .event-info {
+        grid-column: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    & figure {
+        grid-column: 2;
+        height: 100%;
+
+    }
+}
