@@ -1,7 +1,9 @@
 /* move to the stylesheet for page 2 */
 /* Warm-up (WUP) styles for page_2_acting using .warm-up classes */
+
+
 #rollenfindung,
-.warm-up,
+.warm-up, 
 #stimme {
     display: flex;
     gap: 36px;
@@ -38,6 +40,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+  
 
         & img {
             height: auto;
@@ -48,8 +51,8 @@
 
     & .examples {
         flex: 1;
-        /* display: flex;          
-        width: 50%;*/
+        /* display: flex;    */      
+
         flex-wrap: wrap;
         float: column;
         column-count: 2;
