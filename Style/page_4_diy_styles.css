@@ -3,7 +3,7 @@
             position: sticky;
             top: 0;
             overflow: hidden;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.70);
             & a {
                 text-decoration: none; 
                 color: #000;
@@ -25,7 +25,19 @@
                 }                       
             }    
         }
+     
         
+.diy-process:nth-of-type(even) diy-card {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 27, 5% 27, 5% 15% 15%;
+
+    & card-info {
+    grid-column: 1 / span 2;}
+
+    & img {
+        grid-column: 3 / span 2;
+    }
+}
 
 .diy-process{
    

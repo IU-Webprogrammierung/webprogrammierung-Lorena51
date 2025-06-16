@@ -41,12 +41,12 @@
 .event-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-    padding: 10px;
-    margin-bottom: 10px;
-    gap: 10px;
+    background: linear-gradient(135deg, #f8e6f2 0%, #e0c3fc 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(120, 0, 120, 0.10), 0 2px 8px rgba(0,0,0,0.08);
+    padding: 18px;
+    margin-bottom: 16px;
+    gap: 16px;
 
     & h3 {
         grid-column: 1 / span 2;
@@ -99,7 +99,7 @@
         text-align: left;
         min-height: 80px;
         gap: 16px;
-        ;
+        
 
         /* & h3 {
            width:300px;
@@ -159,9 +159,10 @@
     grid-template-columns: 2fr 1fr;
     gap: 24px;
     align-items: center;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    background: linear-gradient(135deg, #f8e6f2 0%, #e0c3fc 100%);
+    border-radius: 18px;
+    border: 3px solid #e0c3fc;
+    box-shadow: 0 4px 24px rgba(120, 0, 120, 0.10), 0 2px 8px rgba(0,0,0,0.08);
     padding: 24px;
     margin-bottom: 40px;
 
@@ -177,4 +178,53 @@
         height: 100%;
 
     }
+}
+
+#advertisement, #box15 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 10px 0px;
+        position: absolute;
+        padding: 10px;
+    }
+
+    & li {
+        position: relative;
+        padding: 10px 10px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    & li:hover > ul {
+        display: flex;
+    }
+
+    & img {     
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(120, 0, 120, 0.15), 0 1.5px 6px rgba(0,0,0,0.08);
+        border: 3px solid linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        background: linear-gradient(135deg, #f8e6f2 0%, #e0c3fc 100%);
+        padding: 6px;
+        ;
+    }
+    & info-block
+    {
+        width: 50% ;
+        display: block;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    
 }
