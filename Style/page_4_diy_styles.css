@@ -1,34 +1,36 @@
 
-
-/* Add any additional styles for the page_4_diy_styles */
-
 #local-navigation-diy {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 10px 20px;
-    list-style: none;
-    gap: 10px;
-
-    & a {
-        text-decoration: none;
-        color: #000;
-        font-weight: 500;
-        font-size: 16px;
-
-        &:hover {
-            color: var(--color-link-hover);
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: white;
+            & a {
+                text-decoration: none; 
+                color: #000;
+                font-weight: 500;
+                font-size: 16px; 
+                float: left;
+                display: block;
+                color: teal;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+                border-radius: 8px;
+                &:hover {
+                    color: var(--color-link-hover);
+                }
+                & .active {
+                    background-color: #04AA6D;
+                    color: white;     
+                }                       
+            }    
         }
-    }
-}
-
-
-
+        
 
 .diy-process{
    
     diy-card:not(:first-child) img {
-        width: 50%;
+        width: 30%;
         display: block;
         align-self: center;
         display: block;
@@ -38,11 +40,9 @@
 
     & diy-card{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-columns:15% 15% 60%;      
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns:15% 15% 27,5% 27,5%;          
       
-        grid-column: span 1;
-        
         /* ToDo add Line between the images between first and second column-gap; */
                      
         gap: 5%;
@@ -50,17 +50,16 @@
 
         & img {
             grid-column: span 2;
-            width: 70%;
+            width: 40%;
             height: auto;
             object-fit: cover;
-            margin: 20px auto;    
+            margin: 10px auto;    
             display: block;
             border-radius: 8px;
         }
 
         & card-info {
-            grid-column: span 1;            
-            padding: 50px;
+            grid-column: span 2;                        
             margin: auto;
             width: 100%;
             box-sizing: border-box;
