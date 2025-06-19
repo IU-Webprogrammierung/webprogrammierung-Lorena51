@@ -25,8 +25,12 @@
         }                       
     }    
 }
-     
-        
+
+
+.section-header{
+    
+    padding-top: 50px;
+}
 
 
 .diy-process{
@@ -43,11 +47,11 @@
     & diy-card{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-columns:15% 15% 27,5% 27,5%;          
+        grid-template-columns:23,5% 23.5% 23,5% 23,5%;
       
         /* ToDo add Line between the images between first and second column-gap; */
                      
-        gap: 5%;
+        gap: 2%;
         margin: 0 px;
 
         & img {
@@ -65,25 +69,15 @@
             margin: auto;
             width: 100%;
             box-sizing: border-box;
-
+            padding-left: 50px;
+            padding-right: auto;
             & p {
                 width: 100%;
                 margin: 0;
+                
             }   
          }
 
-        :nth-of-type(even) diy-card {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-columns: 27, 5% 27, 5% 15% 15%;
-
-            & card-info {
-                grid-column: 1 / span 2;
-            }
-
-            & img {
-                grid-column: 3 / span 2;
-            }   
-            }
     }
 }
 
