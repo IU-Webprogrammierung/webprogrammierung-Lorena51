@@ -1,43 +1,33 @@
 
 #local-navigation-diy {
-            position: sticky;
-            top: 0;
-            overflow: hidden;
-            background-color: rgba(255, 255, 255, 0.70);
-            & a {
-                text-decoration: none; 
-                color: #000;
-                font-weight: 500;
-                font-size: 16px; 
-                float: left;
-                display: block;
-                color: teal;
-                text-align: center;
-                padding: 14px;
-                text-decoration: none;
-                border-radius: 8px;
-                &:hover {
-                    color: var(--color-link-hover);
-                }
-                & .active {
-                    background-color: #04AA6D;
-                    color: white;     
-                }                       
-            }    
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.70);
+    & a {
+        text-decoration: none; 
+        color: #000;
+        font-weight: 500;
+        font-size: 16px; 
+        float: left;
+        display: block;
+        color: teal;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        border-radius: 8px;
+        &:hover {
+            color: var(--color-link-hover);
         }
+        & .active {
+            background-color: #04AA6D;
+            color: white;     
+        }                       
+    }    
+}
      
         
-.diy-process:nth-of-type(even) diy-card {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-columns: 27, 5% 27, 5% 15% 15%;
 
-    & card-info {
-    grid-column: 1 / span 2;}
-
-    & img {
-        grid-column: 3 / span 2;
-    }
-}
 
 .diy-process{
    
@@ -81,6 +71,19 @@
                 margin: 0;
             }   
          }
+
+        :nth-of-type(even) diy-card {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: 27, 5% 27, 5% 15% 15%;
+
+            & card-info {
+                grid-column: 1 / span 2;
+            }
+
+            & img {
+                grid-column: 3 / span 2;
+            }   
+            }
     }
 }
 
