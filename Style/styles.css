@@ -5,12 +5,19 @@
     --color-text: rgba(0, 0, 0, 0.8);
     --color-header-bg: #fff;
     --color-link-hover: deeppink;
-    --color-btn-background: purple;
+    --color-btn-background: #ff1493;
     --color-btn-hover: #980ada; 
+
+
+    --color-olive: #A3A380;
+    --color-golden: #D7CE93;
+    --color-daisy: #EFEBCE;
+    --color-rose:#D8A48F;
+    --color-peach: #BB8588;
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: var(--color-daisy);
     font-family: Arial;
     color: rgba(0, 0, 0, 0.8);
     font-size: 1em;
@@ -20,7 +27,7 @@ body {
     
 }
 h1 {
-    color: deeppink;
+    color: var(--color-olive);
     font-size: 1.5em;
     text-align: center;
 }
@@ -36,8 +43,8 @@ p {
 }
 
 button {
-    background-color: var(--color-btn-background);
-    color: #fff;
+    background-color: var(--color-rose);
+    color: #333;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -49,7 +56,7 @@ button {
     text-decoration: none;
 
     &:hover {
-        background-color: var(--color-btn-hover);
+        background-color: var(--color-peach);
     }
       
 }

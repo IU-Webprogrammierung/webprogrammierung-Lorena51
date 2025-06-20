@@ -70,7 +70,7 @@
 .event-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: linear-gradient(135deg, #f8e6f2 0%, #e0c3fc 100%);
+    background: linear-gradient(135deg, var(--color-rose) 0%, var(--color-peach) 100%);
     border-radius: 18px;
     box-shadow: 0 4px 24px rgba(120, 0, 120, 0.10), 0 2px 8px rgba(0,0,0,0.08);
     padding: 18px;
