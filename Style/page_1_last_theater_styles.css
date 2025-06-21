@@ -1,11 +1,23 @@
 /* style for page_1  */
    h1 {
-        color: var(--color-olive);
+        color: var(--color-secondary);
         font-size: 3em;
         text-align: center;
         margin-top: 40px;
         margin-bottom: 40px;
         letter-spacing: 2px;
+
+            @media (max-width: 1025px) {
+               
+                color:blueviolet;
+            }
+        
+            @media (max-width: 800px) {
+                color: cornflowerblue
+            }
+        
+            @media (max-width: 480px) {
+                color: tomato;        }
     }
 
 #Infos {
@@ -21,7 +33,7 @@
 
 
     h2 {
-        color: #fff;
+        color: var(--color-daisy);
         font-size: 3.5em;
         text-align: center;
         margin: 50px auto 30px auto;
@@ -79,43 +91,27 @@
 #kurzbeschreibung {
 
 
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 
-       & > :nth-child(even) {
+    & > :nth-child(even) {
     align-self: flex-end;
-}
-     & figure{
-      margin-left: 140px;
-      margin-right: 140px;  
+    text-align: right;}
 
-         & img {
-         border-radius: 12px;
-         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);         
-        } 
-   }
-        /* & figure {
-            width: 45%;
-            order: 2;
-            margin: 0;
-            display: flex;
-            justify-content: flex-end;
-            background: transparent;
-        }  */
+    & figure{
+    margin-left: 140px;
+    margin-right: 140px;  
 
+        & img {
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);         
+    } 
+    }
+      
 
-   
-
-
-    & #momo-groupimage {
-
-        /* width: 70%;
-        height: auto;
-        align-content: center;
-        margin: 0;
-        margin-inline: 0; */
+    & #momo-groupimage {      
 
         & img {
             width: 100%;
@@ -136,6 +132,21 @@
         margin-bottom: 40px;
     }
 
+        @media (max-width: 1025px) {
+    
+            & figure {
+                    margin-left: 60px;
+                    margin-right: 60px; 
+            }
+        }
+    
+        @media (max-width: 800px) {
+            color: cornflowerblue
+        }
+    
+        @media (max-width: 480px) {
+            color: tomato;
+        }
 }
 
 #medien {
@@ -155,37 +166,112 @@
         justify-content: center;
 
         & .newspaper-article {
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
+            display: grid;
+            grid-template-rows: max-content 1fr 1fr;
+            grid-template-columns: 1fr;
             width: 25%;
             align-items: center;
+            justify-content: center;
+           
 
             & img {
-                border-radius: 3px;
-                width: 100%;
-                height: auto;
-                box-shadow: 8px 8px 24px rgba(0,0,0,0.15);
-               
-            }           
+            align-self: center;
+            justify-self: center;
+            border-radius: 6px;
+            width: 100%;
+            height: auto;
+            box-shadow: 8px 8px 24px rgba(0,0,0,0.15);
+            }   
+            & p {
+            align-self: center;
+            justify-self: center;
+            }
+            & .read-article {
+            align-self: center;
             }
         }
-    
+        }    
 
-    & podcast {
-        color: #8F9386;
+    & podcast {      
 
         margin-top: 30px;
         align-items: center;
         justify-content: center;
         text-align: center;
+   
 
+        & h3 {
+            padding-top: 20px;
+        }
         & audio {
-            display: block;
+            display: flex;
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
             margin-bottom: 20px;
         }
     }
+
+}
+
+#backstage {
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+#Szenen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  
+    & figure {
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;        
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 80%;
+
+
+
+         &  img {
+        /* width: 40%; */
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        object-fit: cover;
+        }
+
+        &  figcaption {
+            width: 60%;
+            text-align: left;
+            font-size: 1.2em;
+            padding: 0 16px;
+        }
+        /* Even: image left, caption right; Odd: image right, caption left */
+        &:nth-child(even) {
+            flex-direction: row;
+        }
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        &:last-child {
+            flex-direction: column;
+            /* & img {
+                    width:70%;} */
+
+            & figcaption {
+                    width: 60%;
+                    text-align: center;
+            }
+        }
+    }
+
+   
+
+ 
 }
