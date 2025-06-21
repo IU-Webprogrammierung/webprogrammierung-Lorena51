@@ -17,9 +17,7 @@
     width: 100%;
     height: 500px;
     margin: 0;
-
     position: relative;
-
 
     h2 {
         color: var(--color-daisy);
@@ -69,21 +67,18 @@
         padding-right: 30px;
     }
 
-        @media (max-width: 1025px) {
-    
-        background-size: cover;
-        background-position: right;
-        }
+    @media (max-width: 1025px) {
+
+    background-size: cover;
+    background-position: right;
+    }
 
     @media (max-width: 800px) {
         .info-bg-rectangle {
             width: 100%;
         }
-    }
- 
+    } 
 }
-
-
 
 #kurzbeschreibung {
 
@@ -103,12 +98,10 @@
         & img {
         border-radius: 12px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);         
-    } 
+        } 
     }
       
-
-    & #momo-groupimage {      
-
+    & #momo-groupimage {    
         & img {
             width: 100%;
             border-radius: 12px;
@@ -121,34 +114,30 @@
             font-size: 1.2em;
             padding: 20px;
         }
-
     }
     #BtnToActors {
         align-self:center;
         margin-bottom: 40px;
     }
 
-        @media (max-width: 1025px) {
-    
-            & figure {
-                    margin-left: 60px;
-                    margin-right: 60px; 
-            }
-        }   
-      @media (max-width: 800px) {
-        align-items: center;
-        
-            &> :nth-child(even) {
-                align-self: center;
-                text-align: left;
-            }
+    @media (max-width: 1025px) {
+
+        & figure {
+                margin-left: 60px;
+                margin-right: 60px; 
         }
+    }   
+    @media (max-width: 800px) {
+    align-items: center;
     
-        
+        &> :nth-child(even) {
+            align-self: center;
+            text-align: left;
+        }
+    }        
 }
 
 #medien {
-
     background-color: var(--color-golden);
     padding: 40px 20px;
     border-radius: 3px;
@@ -188,7 +177,7 @@
             align-self: center;
             }
         }
-        }    
+    }    
 
     & podcast {      
 
@@ -197,7 +186,6 @@
         justify-content: center;
         text-align: center;
    
-
         & h3 {
             padding-top: 20px;
         }
@@ -233,12 +221,12 @@
             }
         }
     }
-
 }
 
 #backstage {
     margin-left: 100px;
     margin-right: 100px;
+
     @media (max-width: 800px) {
         margin-left: 20px;
         margin-right: 20px;
@@ -261,7 +249,7 @@
         gap: 16px;
         width: 80%;
 
-         &  img {
+        &  img {
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         object-fit: cover;
@@ -283,9 +271,7 @@
 
         &:last-child {
             flex-direction: column;
-            /* & img {
-                    width:70%;} */
-
+       
             & figcaption {
                     width: 60%;
                     text-align: center;
@@ -294,29 +280,28 @@
     }
 
    
-        @media (max-width: 800px) {
-            & figure {
-                display: block;
-                flex-direction: column-reverse;
-                width: 100%;
-                padding: 10px;
-                gap: 8px;
-                justify-items: center;
+    @media (max-width: 800px) {
+        & figure {
+            display: block;
+            flex-direction: column-reverse;
+            width: 100%;
+            padding: 10px;
+            gap: 8px;
+            justify-items: center;
 
-                & img {
-                    width: 100%;
-                    max-width: 320px;
-                    margin: 0 auto;
-                    object-fit:none;
-                }
-                & figcaption {
-                    width: 100%;
-                    text-align: center;
-                    font-size: 1em;
-                    padding: 0 8px;
-                    padding-top: 10px;
-                }
+            & img {
+                width: 100%;
+                max-width: 320px;
+                margin: 0 auto;
+                object-fit:none;
+            }
+            & figcaption {
+                width: 100%;
+                text-align: center;
+                font-size: 1em;
+                padding: 0 8px;
+                padding-top: 10px;
             }
         }
- 
+    } 
 }
