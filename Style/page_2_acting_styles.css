@@ -1,13 +1,13 @@
 
-
+#acting-introduction,
 #rollenfindung,
-.warm-up, 
-#stimme {
+.info-section {
+ 
+    margin-bottom: 40px;
     display: flex;
     gap: 36px;
-    margin-bottom: 40px;
     flex-wrap: wrap;
-
+ 
     & .p {
         font-size: 1em;
     }
@@ -47,6 +47,8 @@
         }
     }
 
+   
+
     & .examples {
         flex: 1;  
         flex-wrap: wrap;
@@ -75,10 +77,8 @@
                 font-weight: 600;                
                 margin-top: 0;
             }
-
             & p,
             ul {
-
                 margin: 0;
                 font-size: 0.8em;
             }
@@ -90,8 +90,36 @@
         }       
     }
 
+@media (max-width: 1025px) {
+   display: block;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    & .details {
+    max-width: 100%;
+    width: 100%;}        
 }
-#stimme {
-    display: flex;
-    flex-direction: row-reverse;
+
+@media (max-width: 800px) {
+    & .examples {
+        display: block;
+        column-count: 1;
+        width: 100%;
+
+        & .example-card{
+            max-width: 100%;
+            margin-bottom: 20px;
+           
+        }
+    }
 }
+
+@media (max-width: 480px) {
+    margin-right: 5px;
+    margin-left: 5px;        
+}
+}
+#warm-up {
+        flex-direction: row-reverse;
+    }
