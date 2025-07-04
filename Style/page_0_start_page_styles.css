@@ -189,15 +189,17 @@
         @media (max-width: 1025px) {
             & .service-card {
                 width: 90%;
-                padding: 16;
             }
         }
         @media (max-width: 480px) {
+            & .service-card {
+                    width:auto;
+                }
     /* ToDo Abstand zum rechten Rand anpassen */
                   }
 }
 
-.last-event-card {
+.last-event-card { 
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 24px;
