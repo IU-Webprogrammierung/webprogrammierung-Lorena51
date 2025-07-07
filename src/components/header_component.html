@@ -1,114 +1,132 @@
-<!-- Global Navigation -->
-
-
-<nav
-  class="global-nav w-full bg-white/90 shadow flex items-center justify-between px-4 py-2 sticky top-0 z-20"
->
-  <a id="logo" href="/page_0_start_page.html" class="flex items-center">
-    <img
-      src="/img/Header_Footer/Logo_Jugendtheater.jpg"
-      alt="Site Logo Jugendtheater Neuburg"
-      height="50"
-      width="50"
-      class="w-14 h-14 object-cover"
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Das Jugendtheater Neuburg – Informationen zu unseren Veranstaltungen, Proben, Aufführungen und wie du Teil unserer Theatergruppe werden kannst."
     />
-  </a>
-   <button
-    id="hamburger"
-    aria-label="Menü öffnen"
-    aria-controls="main-nav-links"
-    aria-expanded="false"
-    class="flex flex-col justify-center items-center w-10 h-10 md:hidden focus:outline-none"
-  >
-    <span
-      class="bar block w-7 h-1 bg-[var(--color-secondary)] mb-1 rounded transition-all"
-    ></span>
-    <span
-      class="bar block w-7 h-1 bg-[var(--color-secondary)] mb-1 rounded transition-all"
-    ></span>
-    <span
-      class="bar block w-7 h-1 bg-[var(--color-secondary)] rounded transition-all"
-    ></span>
-  </button> 
+    <meta
+      name="keywords"
+      content="Jugendtheater, Neuburg, Theater, Aufführungen, Improvisation, Box 15, Veranstaltungen, Jugendliche, Schauspiel, Theatergruppe"
+    />
+    <meta name="author" content="Lorena51" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/include.js" defer></script>
+    <link href="./output.css" rel="stylesheet" />
+    <title>Header</title>
+  </head>
 
-  <ul
-    id="main-nav-links"
-    class="hidden flex flex-row gap-8 items-start font-medium text-lg"
+  <nav
+    class="global-nav w-full bg-white/90 shadow flex items-center justify-between px-4 py-2 sticky top-0 z-20"
   >
-    <li class="relative group">
-      <a
-        href="page_1_last_theater.html"
-        class="text-[var(--color-primary)] hover:text-deeppink transition"
-        >Impressionen</a
+    <a id="logo" href="page_0_start_page.html" class="flex items-center">
+      <img
+        src="/img/Header_Footer/Logo_Jugendtheater.jpg"
+        alt="Site Logo Jugendtheater Neuburg"
+        height="50"
+        width="50"
+        class="w-14 h-14 object-cover"
+      />
+    </a>
+
+    <label for="menu-toggle" class="pointer-cursor md:hidden block">
+      <svg
+        class="fill-current text-gray-900"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
       >
-      <ul
-        class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[140px] z-30"
-      >
-        <li>
-          <a
-            href="page_1_last_theater.html"
-            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
-            >Momo</a
-          >
-        </li>
-      </ul>
-    </li>
-    <li class="relative group">
-      <a
-        href="page_2_acting.html"
-        class="text-[var(--color-primary)] hover:text-[var(--color-link-hover)] transition"
-        >Schauspiel</a
-      >
-      <ul
-        class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[140px] z-30"
-      >
-        <li>
-          <a
-            href="page_2_acting.html"
-            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
-            >Proben</a
-          >
-        </li>
-        <li>
-          <a
-            href="page_3_actors.html"
-            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
-            >Schauspieler</a
-          >
-        </li>
-      </ul>
-    </li>
-    <li class="relative group">
-      <a
-        href="page_4_diy.html"
-        class="text-[var(--color-primary)] hover:text-[var(--color-link-hover)] transition"
-        >Kreativwerkstatt</a
-      >
-      <ul
-        class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[180px] z-30"
-      >
-        <li>
-          <a
-            href="page_4_diy.html#costume"
-            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
-            >Kostüme</a
-          >
-        </li>
-        <li>
-          <a
-            href="page_4_diy.html#requisites"
-            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
-            >Requisiten</a
-          >
-        </li>
-        <li>
-          <a
-            href="page_4_diy.html#stage-elements"
-            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
-            >Bühne</a
-          >
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+        <title>menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+      </svg>
+    </label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+    <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+      <nav>
+        <ul
+          class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"
+        >
+          <li class="relative group md:p-4 py-3 px-0 block">
+            <a
+              href="page_1_last_theater.html"
+              class="text-[var(--color-primary)] hover:text-deeppink"
+              >Impressionen</a
+            >
+            <ul
+              class="absolute left-0 mt-2 bg-white rounded shadow-lg backgr hidden group-hover:block min-w-[140px] z-30"
+            >
+              <li>
+                <a
+                  href="page_1_last_theater.html"
+                  class="block px-4 py-2 text-#333 hover:bg-#BB8588 hover:text-pink-100 rounded transition"
+                  >Momo</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group md:p-4 py-3 px-0 block">
+            <a
+              href="page_2_acting.html"
+              class="text-[var(--color-primary)] hover:text-[var(--color-link-hover)] transition"
+              >Schauspiel</a
+            >
+            <ul
+              class="absolute left-0 mt-2 bg-white rounded shadow-lg backgr hidden group-hover:block min-w-[140px] z-30"
+            >
+              <li>
+                <a
+                  href="page_2_acting.html"
+                  class="block px-4 py-2 text-#333 hover:bg-#BB8588 hover:text-white rounded transition"
+                  >Proben</a
+                >
+              </li>
+              <li>
+                <a
+                  href="page_3_actors.html"
+                  class="block px-4 py-2 text-#333 hover:bg-#BB8588 hover:text-white rounded transition"
+                  >Schauspieler</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative group md:p-4 py-3 px-0 block">
+            <a
+              href="page_4_diy.html"
+              class="text-[var(--color-primary)] hover:text-[var(--color-link-hover)] transition"
+              >Kreativwerkstatt</a
+            >
+            <ul
+              class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[180px] z-30"
+            >
+              <li>
+                <a
+                  href="page_4_diy.html#costume"
+                  class="block px-4 py-2 text-#333 hover:bg-yellow-600 hover:text-pink-100 rounded transition"
+                  >Kostüme</a
+                >
+              </li>
+              <li>
+                <a
+                  href="page_4_diy.html#requisites"
+                  class="block px-4 py-2 text-#333 hover:bg-yellow-600 hover:text-pink-100 rounded"
+                  >Requisiten</a
+                >
+              </li>
+              <li>
+                <a
+                  href="page_4_diy.html#stage-elements"
+                  class="block px-4 py-2 text-#333 hover:bg-yellow-600 hover:text-pink-100 rounded transition"
+                  >Bühne</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+</html>
