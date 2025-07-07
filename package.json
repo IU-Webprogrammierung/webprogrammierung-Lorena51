@@ -1,0 +1,14 @@
+{
+  "name": "webprogrammierung-lorena51",
+  "version": "1.0.0",
+  "description": "Willkommen zum Webprojekt des Jugendtheater Neuburg! Diese Website präsentiert unser Ensemble, vergangene Aufführungen, kreative Werkstätten und vieles mehr. Die Seite ist modular aufgebaut und für Desktop & Mobile optimiert.",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
