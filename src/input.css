@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --color-primary: deeppink;
+    --color-secondary: #333;
+    --color-background: #f0f0f0;
+    --color-text: rgba(0, 0, 0, 0.8);
+    --color-header-bg: #fff;
+    --color-link-hover: #BB8588;
+    --color-btn-background: #ff1493;
+    --color-btn-hover: #980ada;
+
+    --color-darkerOlive: #585840;
+    --color-olive: #A3A380;
+    --color-golden: #D7CE93;
+    --color-daisy: #EFEBCE;
+    --color-rose: #D8A48F;
+    --color-peach: #BB8588;
+}

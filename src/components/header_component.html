@@ -1,40 +1,114 @@
+<!-- Global Navigation -->
 
-    <!-- Global Navigation -->
-    <nav class="global-nav">
-      <a id="logo" href="/page_0_start_page.html">
-        <img
-          src="/img/Header_Footer/Logo_Jugendtheater.jpg"
-          alt="Site Logo Jugendtheater Neuburg"
-          height="50"
-        />
-      </a>
-      <button id="hamburger" aria-label="Menü öffnen" aria-controls="main-nav-links" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      
-      <ul id="main-nav-links">
+
+<nav
+  class="global-nav w-full bg-white/90 shadow flex items-center justify-between px-4 py-2 sticky top-0 z-20"
+>
+  <a id="logo" href="/page_0_start_page.html" class="flex items-center">
+    <img
+      src="/img/Header_Footer/Logo_Jugendtheater.jpg"
+      alt="Site Logo Jugendtheater Neuburg"
+      height="50"
+      width="50"
+      class="w-14 h-14 object-cover"
+    />
+  </a>
+   <button
+    id="hamburger"
+    aria-label="Menü öffnen"
+    aria-controls="main-nav-links"
+    aria-expanded="false"
+    class="flex flex-col justify-center items-center w-10 h-10 md:hidden focus:outline-none"
+  >
+    <span
+      class="bar block w-7 h-1 bg-[var(--color-secondary)] mb-1 rounded transition-all"
+    ></span>
+    <span
+      class="bar block w-7 h-1 bg-[var(--color-secondary)] mb-1 rounded transition-all"
+    ></span>
+    <span
+      class="bar block w-7 h-1 bg-[var(--color-secondary)] rounded transition-all"
+    ></span>
+  </button> 
+
+  <ul
+    id="main-nav-links"
+    class="hidden flex flex-row gap-8 items-start font-medium text-lg"
+  >
+    <li class="relative group">
+      <a
+        href="page_1_last_theater.html"
+        class="text-[var(--color-primary)] hover:text-deeppink transition"
+        >Impressionen</a
+      >
+      <ul
+        class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[140px] z-30"
+      >
         <li>
-          <a href="/page_1_last_theater.html">Impressionen</a>
-          <ul>
-            <li><a href="/page_1_last_theater.html">Momo</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/page_2_acting.html">Schauspiel</a>
-          <ul>
-            <li><a href="/page_2_acting.html">Proben</a></li>
-            <li><a href="/page_3_actors.html">Schauspieler</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="/page_4_diy.html">Kreativwerkstatt</a>
-          <ul>
-            <li><a href="/page_4_diy.html#costume">Kostüme</a></li>
-            <li><a href="/page_4_diy.html#requisites">Requisiten</a></li>
-            <li><a href="/page_4_diy.html#stage-elements">Bühne</a></li>
-          </ul>
+          <a
+            href="page_1_last_theater.html"
+            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
+            >Momo</a
+          >
         </li>
       </ul>
-    </nav>
+    </li>
+    <li class="relative group">
+      <a
+        href="page_2_acting.html"
+        class="text-[var(--color-primary)] hover:text-[var(--color-link-hover)] transition"
+        >Schauspiel</a
+      >
+      <ul
+        class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[140px] z-30"
+      >
+        <li>
+          <a
+            href="page_2_acting.html"
+            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
+            >Proben</a
+          >
+        </li>
+        <li>
+          <a
+            href="page_3_actors.html"
+            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
+            >Schauspieler</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li class="relative group">
+      <a
+        href="page_4_diy.html"
+        class="text-[var(--color-primary)] hover:text-[var(--color-link-hover)] transition"
+        >Kreativwerkstatt</a
+      >
+      <ul
+        class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[180px] z-30"
+      >
+        <li>
+          <a
+            href="page_4_diy.html#costume"
+            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
+            >Kostüme</a
+          >
+        </li>
+        <li>
+          <a
+            href="page_4_diy.html#requisites"
+            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
+            >Requisiten</a
+          >
+        </li>
+        <li>
+          <a
+            href="page_4_diy.html#stage-elements"
+            class="block px-4 py-2 text-[var(--color-secondary)] hover:bg-[var(--color-peach)] hover:text-white rounded transition"
+            >Bühne</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
