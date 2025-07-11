@@ -20,6 +20,7 @@
         color_link_hover: '#BB8588',
         color_btn_background: '#ff1493',
         btn_hover: '#980ada',
+        backgroundTransparent: 'rgba(255,255,255,0.5)',
 
         darkerOlive: '#585840',
       olive: '#A3A380',
