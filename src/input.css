@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @theme {
  
             --color-primary: deeppink;
@@ -19,4 +19,4 @@
             --color-daisy: #EFEBCE;
             --color-rose: #D8A48F;
             --color-peach: #BB8588;   
-}
+} */

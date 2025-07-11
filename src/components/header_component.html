@@ -5,113 +5,104 @@
   <link href="./output.css" rel="stylesheet" />
   <title>Header</title>
 </head>
-
-<nav
-  class="global-nav w-full bg-white/90 shadow flex items-center justify-between px-4 py-2 sticky top-0 z-20"
->
-  <a id="logo" href="page_0_start_page.html" class="flex items-center">
-    <img
-      src="/img/Header_Footer/Logo_Jugendtheater.jpg"
-      alt="Site Logo Jugendtheater Neuburg"
-      height="50"
-      width="50"
-      class="w-14 h-14 object-cover"
-    />
+<nav class="global-nav sticky top-0 z-20 flex w-full items-center justify-between bg-white/90 px-4 py-2 shadow">
+  <!-- Logo -->
+  <a href="page_0_start_page.html" class="flex items-center">
+    <img src="/img/Header_Footer/Logo_Jugendtheater.jpg" alt="Logo" class="h-14 w-14 object-cover" />
   </a>
 
-  <label for="menu-toggle" class="pointer-cursor md:hidden block">
-    <svg
-      class="fill-current text-gray-900"
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-    >
-      <title>menu</title>
-      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+  <!-- Hamburger Toggle -->
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+  <label for="menu-toggle" class="block cursor-pointer p-2 md:hidden">
+    <svg class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
   </label>
-  <input class="hidden" type="checkbox" id="menu-toggle" />
 
-  <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+  <!-- Menu -->
+  <div class="fixed top-[64px] right-0 z-10 hidden h-screen w-3/4 flex-col gap-2 bg-white px-4 py-6 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none" id="menu">
     <nav>
-      <ul
-        class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0"
-      >
-        <li class="relative group md:p-4 py-3 px-0 block">
-          <a
-            href="page_1_last_theater.html"
-            class="text-[var(--color-primary)] hover:text-peach"
-            >Impressionen</a
-          >
-          <ul
-            class="absolute left-0 mt-2 bg-white rounded shadow-lg backgr hidden group-hover:block min-w-[140px] z-30"
-          >
-            <li>
-              <a
-                href="page_1_last_theater.html"
-                class="block px-4 py-2 text-#333 hover:bg-text-peach hover:text-white rounded transition"
-                >Momo</a
-              >
-            </li>
-          </ul>
+      <ul class="flex w-full flex-col gap-4 text-base text-gray-700 md:flex-row md:gap-6 md:pt-0">
+        <!--Impressionen -->
+        <li class="group md:relative">
+          <!-- Mobile: Clickable -->
+          <details class="md:hidden">
+            <summary class="hover:text-peach cursor-pointer">Impressionen</summary>
+            <ul class="mt-2 ml-4 space-y-2">
+              <li>
+                <a href="page_1_last_theater.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Momo</a>
+              </li>
+            </ul>
+          </details>
+        
+
+          <!-- Desktop: Hoverable -->
+          <li class=" hidden relative group md:p-4 py-3 px-0 md:block">
+            <a href="page_1_last_theater.html" class="hover:text-peach">Impressionen</a>
+            <ul class="backgr absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-white shadow-lg group-hover:block">
+              <li>
+                <a href="page_1_last_theater.html" class="text-#333 hover:bg-text-peach block rounded px-4 py-2 transition hover:text-white">Momo</a>
+              </li>
+            </ul>
+          </li>
+          </li>
+
+        <!-- Schauspiel -->
+        <li class="group md:relative">
+          <details class="md:hidden">
+            <summary class="hover:text-peach cursor-pointer">Schauspiel</summary>
+            <ul class="mt-2 ml-4 space-y-2">
+              <li>
+                <a href="page_2_acting.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Proben</a>
+              </li>
+              <li>
+                <a href="page_3_actors.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Schauspieler</a>
+              </li>
+            </ul>
+          </details>
+          <li class="hidden relative group md:p-4 py-3 px-0 md:block">
+            <a href="page_2_acting.html" class="text-color_primary hover:text-peach">Schauspiel</a>
+            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-white shadow-lg group-hover:block">
+              <li>
+                <a href="page_2_acting.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Proben</a>
+              </li>
+              <li>
+                <a href="page_3_actors.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Schauspieler</a>
+              </li>
+            </ul>
+          </li>
         </li>
-        <li class="relative group md:p-4 py-3 px-0 block">
-          <a
-            href="page_2_acting.html"
-            class="text-[var(--color-primary)] hover:bg-text-peach hover:text-white transition"
-            >Schauspiel</a
-          >
-          <ul
-            class="absolute left-0 mt-2 bg-white rounded shadow-lg backgr hidden group-hover:block min-w-[140px] z-30 transition"
-          >
-            <li>
-              <a
-                href="page_2_acting.html"
-                class="block px-4 py-2 text-#333 hhover:bg-text-peach hover:text-white rounded transition"
-                >Proben</a
-              >
-            </li>
-            <li>
-              <a
-                href="page_3_actors.html"
-                class="block px-4 py-2 text-#333 hover:bg-text-peach hover:text-white rounded transition"
-                >Schauspieler</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="relative group md:p-4 py-3 px-0 block">
-          <a
-            href="page_4_diy.html"
-            class="text-[var(--color-primary)] hover:text-peach transition"
-            >Kreativwerkstatt</a
-          >
-          <ul
-            class="absolute left-0 mt-2 bg-white rounded shadow-lg hidden group-hover:block min-w-[180px] z-30"
-          >
-            <li>
-              <a
-                href="page_4_diy.html#costume"
-                class="block px-4 py-2 text-#333hover:bg-text-peach hover:text-white rounded transition"
-                >Kostüme</a
-              >
-            </li>
-            <li>
-              <a
-                href="page_4_diy.html#requisites"
-                class="block px-4 py-2 text-#333 hover:bg-text-peach hover:text-white rounded transition"
-                >Requisiten</a
-              >
-            </li>
-            <li>
-              <a
-                href="page_4_diy.html#stage-elements"
-                class="block px-4 py-2 text-#333hover:bg-text-peach hover:text-white rounded transition"
-                >Bühne</a
-              >
-            </li>
-          </ul>
+
+        <!-- Kreativwerkstatt -->
+        <li class="group md:relative">
+          <details class="md:hidden">
+            <summary class="hover:text-peach cursor-pointer">Kreativwerkstatt</summary>
+            <ul class="mt-2 ml-4 space-y-2">
+              <li>
+                <a href="page_4_diy.html#costume" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Kostüme</a>
+              </li>
+              <li>
+                <a href="page_4_diy.html#requisites" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Requisiten</a>
+              </li>
+              <li>
+                <a href="page_4_diy.html#stage-elements" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Bühne</a>
+              </li>
+            </ul>
+          </details>
+          <li class="hidden relative group md:p-4 py-3 px-0 md:block">
+            <a href="page_4_diy.html" class="text-color_primary hover:text-peach">Kreativwerkstatt</a>
+            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[180px] rounded bg-white shadow-lg group-hover:block">
+              <li>
+                <a href="page_4_diy.html#costume" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Kostüme</a>
+              </li>
+              <li>
+                <a href="page_4_diy.html#requisites" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Requisiten</a>
+              </li>
+              <li>
+                <a href="page_4_diy.html#stage-elements" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Bühne</a>
+              </li>
+            </ul>
+          </li>
         </li>
       </ul>
     </nav>
