@@ -1077,6 +1077,11 @@ video {
   background-color: rgb(255 255 255 / 0.9);
 }
 
+.bg-darkerOlive {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 88 64 / var(--tw-bg-opacity, 1));
+}
+
 .bg-\[url\(\'\/img\/Momo\/Hintergrund_website\.png\'\)\] {
   background-image: url('/img/Momo/Hintergrund_website.png');
 }
