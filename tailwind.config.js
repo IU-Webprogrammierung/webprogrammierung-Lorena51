@@ -19,13 +19,13 @@
         color_header_bg: '#fff',
         color_link_hover: '#BB8588',
         color_btn_background: '#ff1493',
-        color_btn_hover: '#980ada',
+        btn_hover: '#980ada',
 
-        color_darkerOlive: '#585840',
-        color_olive: '#A3A380',
-        color_golden: '#D7CE93',
-        color_daisy: '#EFEBCE',
-        color_rose: '#D8A48F',
+        darkerOlive: '#585840',
+      olive: '#A3A380',
+        golden: '#D7CE93',
+        daisy: '#EFEBCE',
+        rose: '#D8A48F',
         peach: '#BB8588',
       }
     }

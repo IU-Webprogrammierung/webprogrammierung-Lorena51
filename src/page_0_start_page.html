@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" /> 
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -26,13 +26,13 @@
     <main>
       <section
         id="hero"
-        class="flex flex-col-2 gap-4 items-center py-8 bg-gradient-to-r from-purple-200 to-pink-100"
+        class="block md:flex md:flex-col-2 gap-16 items-center py-8 bg-gradient-to-r from-peach to-daisy bg-fixed"
       >
         <img
           id="group-photo"
           src="/img/Startseite/Gruppenbild_Momo.jpg"
           alt="Gruppenbild Jugendtheater bei der Aufführung Momo 2025"
-          class="rounded-lg shadow-lg mb-4 w-full max-w-xl h-[300px] object-cover"
+          class="rounded-lg shadow-lg mb-5 w-full max-w-xl h-[300px] object-cover"
         />
         <div class="flex flex-col items-center">
           <img
@@ -42,8 +42,10 @@
             height="100"
             width="100"
           />
-          <h1 class="text-4xl font-extrabold text-purple-700">Jugendtheater</h1>
-          <h2 class="text-2xl font-semibold text-purple-500">
+          <h1 class="text-4xl font-extrabold text-darkerOlive">
+            Jugendtheater
+          </h1>
+          <h2 class="text-2xl font-semibold text-darkerOlive">
             im Neuburger Volkstheater
           </h2>
         </div>
@@ -67,7 +69,9 @@
           Kommende Veranstaltungen
         </h2>
         <div class="grid gap-4">
-          <div class="event-card bg-purple-100 rounded-lg shadow p-4">
+          <div
+            class="event-card bg-rose rounded-lg shadow p-4 m-4 hover:scale-105"
+          >
             <h3 class="text-lg font-semibold mb-2">
               Improvisationstheater auf dem Schlossfest
             </h3>
@@ -78,11 +82,13 @@
               <span>🕒 15:00-16:00</span>
               <span>📍 Theater Neuburg</span>
             </div>
-            <div class="font-bold text-green-700">Eintritt frei</div>
+            <div class="font-bold text-darkerOlive">Eintritt frei</div>
           </div>
         </div>
         <div class="grid gap-4">
-          <div class="event-card bg-purple-100 rounded-lg shadow p-4">
+          <div
+            class="event-card bg-rose rounded-lg shadow p-4 m-4 hover:scale-105"
+          >
             <h3 class="text-lg font-semibold mb-2">
               Improvisationstheater auf dem Schlossfest
             </h3>
@@ -93,11 +99,13 @@
               <span>🕒 15:00-16:00</span>
               <span>📍 Theater Neuburg</span>
             </div>
-            <div class="font-bold text-green-700">Eintritt frei</div>
+            <div class="font-bold text-darkerOlive">Eintritt frei</div>
           </div>
         </div>
         <div class="grid gap-4">
-          <div class="event-card bg-purple-100 rounded-lg shadow p-4">
+          <div
+            class="event-card bg-rose rounded-lg shadow p-4 m-4 hover:scale-105"
+          >
             <h3 class="text-lg font-semibold mb-2">
               Improvisationstheater auf dem Schlossfest
             </h3>
@@ -108,11 +116,13 @@
               <span>🕒 15:00-16:00</span>
               <span>📍 Theater Neuburg</span>
             </div>
-            <div class="font-bold text-green-700">Eintritt frei</div>
+            <div class="font-bold text-darkerOlive">Eintritt frei</div>
           </div>
         </div>
         <div class="grid gap-4">
-          <div class="event-card bg-purple-100 rounded-lg shadow p-4">
+          <div
+            class="event-card bg-rose rounded-lg shadow p-4 m-4 hover:scale-105"
+          >
             <h3 class="text-lg font-semibold mb-2">
               Improvisationstheater auf dem Schlossfest
             </h3>
@@ -123,48 +133,23 @@
               <span>🕒 15:00-16:00</span>
               <span>📍 Theater Neuburg</span>
             </div>
-            <div class="font-bold text-green-700">Eintritt frei</div>
+            <div class="font-bold text-darkerOlive">Eintritt frei</div>
           </div>
         </div>
-        <div class="grid gap-4">
-          <div class="event-card bg-purple-100 rounded-lg shadow p-4">
-            <h3 class="text-lg font-semibold mb-2">
-              Improvisationstheater auf dem Schlossfest
-            </h3>
-            <div
-              class="flex flex-col md:flex-row md:gap-4 text-sm text-gray-700 mb-2"
-            >
-              <span>📅 15.05.2025</span>
-              <span>🕒 15:00-16:00</span>
-              <span>📍 Theater Neuburg</span>
-            </div>
-            <div class="font-bold text-green-700">Eintritt frei</div>
-          </div>
+
+        <div class="flex justify-center">
+          <button
+            class="w-1/2 mt-6 px-6 py-2 bg-daisy text-darkerOlive rounded hover:bg-darkerOlive hover:text-daisy transition"
+          >
+            alle Veranstaltungen
+          </button>
         </div>
-        <div class="grid gap-4 ">
-          <div class="event-card bg-purple-100 rounded-lg shadow p-4">
-            <h3 class="text-lg font-semibold mb-2">
-              Improvisationstheater auf dem Schlossfest
-            </h3>
-            <div
-              class="flex flex-col md:flex-row md:gap-4 text-sm text-gray-700 mb-2"
-            >
-              <span>📅 15.05.2025</span>
-              <span>🕒 15:00-16:00</span>
-              <span>📍 Theater Neuburg</span>
-            </div>
-            <div class="font-bold text-green-700">Eintritt frei</div>
-          </div>
-        </div>
-        <button
-          class="mt-6 px-6 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition"
-        >
-          Alle Veranstaltungen ansehen
-        </button>
       </section>
 
       <section id="services" class="max-w-4xl mx-auto my-12">
-        <h2 class="text-2xl font-bold mb-6 text-center">Was wir machen</h2>
+        <h2 class="text-2xl font-bold mb-6 text-center text-darkerOlive">
+          Was wir machen
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="service-card bg-white rounded-lg shadow p-4">
             <h3 class="text-lg font-semibold mb-2">🎭 Impro</h3>
@@ -198,29 +183,54 @@
         </div>
       </section>
 
-      <section id="advertisement" class="flex flex-col md:flex-row items-center justify-center gap-8 my-12 bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg shadow p-6">
+      <section
+        id="advertisement"
+        class="flex flex-col md:flex-row items-center justify-center gap-8 my-12 bg-gradient-to-r from-pink-100 to-purple-100 rounded-lg shadow p-6"
+      >
         <div class="flex-1">
-          <h2 class="text-2xl font-bold mb-4 text-purple-700">Du bist zwischen 14 und 27 Jahre alt?</h2>
+          <h2 class="text-2xl font-bold mb-4 text-darkerOlive">
+            Du bist zwischen 14 und 27 Jahre alt?
+          </h2>
           <p class="mb-2">
-            Dann komm vorbei und werde Teil unserer Gruppe. Wir freuen uns auf neue Gesichter und gemeinsames Theatererleben. Wir proben mittwochs von 19:30 bis 22:00 Uhr in der Box 15.
+            Dann komm vorbei und werde Teil unserer Gruppe. Wir freuen uns auf
+            neue Gesichter und gemeinsames Theatererleben. Wir proben mittwochs
+            von 19:30 bis 22:00 Uhr in der Box 15.
           </p>
           <p class="mb-4">
             Folge uns gern auf Instagram, Facebook oder schreib uns per Mail.
           </p>
           <ul class="flex gap-4 mb-4">
             <li>
-              <a href="https://www.facebook.com/jugendtheaterneuburg" aria-label="Facebook" class="hover:scale-110 transition">
-                <img src="/img/Header_Footer/facebook.png" alt="Facebook" class="h-8 w-8" />
+              <a
+                href="https://www.facebook.com/jugendtheaterneuburg"
+                aria-label="Facebook"
+              >
+                <img
+                  src="/img/Header_Footer/facebook.png"
+                  alt="Facebook"
+                  class="h-8 w-8 hover:scale-110 transition"
+                />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/jugendtheaterneuburg" aria-label="Instagram" class="hover:scale-110 transition">
-                <img src="/img/Header_Footer/instagram.png" alt="Instagram" class="h-8 w-8" />
+              <a
+                href="https://www.instagram.com/jugendtheaterneuburg"
+                aria-label="Instagram"
+              >
+                <img
+                  src="/img/Header_Footer/instagram.png"
+                  alt="Instagram"
+                  class="h-8 w-8 hover:scale-110 transition"
+                />
               </a>
             </li>
             <li>
-              <a href="mailto:jugendtheater.neuburg@gmx.de" aria-label="E-Mail" class="hover:scale-110 transition">
-                <img src="/img/Header_Footer/email.png" alt="E-Mail" class="h-8 w-8" />
+              <a href="mailto:jugendtheater.neuburg@gmx.de" aria-label="E-Mail">
+                <img
+                  src="/img/Header_Footer/email.png"
+                  alt="E-Mail"
+                  class="h-8 w-8 hover:scale-110 transition"
+                />
               </a>
             </li>
           </ul>
@@ -231,17 +241,25 @@
           class="rounded-lg shadow-lg w-60 h-80 object-cover"
         />
       </section>
-      
-      <section id="box15" class="flex flex-col md:flex-row items-center justify-center gap-8 my-12 bg-white rounded-lg shadow p-6">
+
+      <section
+        id="box15"
+        class="flex flex-col md:flex-row items-center justify-center gap-8 my-12 bg-white rounded-lg shadow p-6"
+      >
         <img
           src="/img/Startseite/Box15.png"
           alt="Blick in die Box 15"
           class="rounded-lg shadow w-60 h-80 object-cover mb-4 md:mb-0"
         />
         <div>
-          <h2 class="text-2xl font-bold mb-2 text-purple-700">Box 15</h2>
-          <p class="mb-2">Unsere Proberäume und kleine Bühne mit 60 Zuschauerplätzen.</p>
-          <address aria-label="Adresse von Box 15" class="not-italic text-gray-700">
+          <h2 class="text-2xl font-bold mb-2 text-rose">Box 15</h2>
+          <p class="mb-2">
+            Unsere Proberäume und kleine Bühne mit 60 Zuschauerplätzen.
+          </p>
+          <address
+            aria-label="Adresse von Box 15"
+            class="not-italic text-gray-700"
+          >
             <strong>Jugendtheater Neuburg</strong><br />
             <strong>Box 15</strong><br />
             Donauwörther Straße 78,5<br />
@@ -249,23 +267,38 @@
           </address>
         </div>
       </section>
-      
+
       <section id="last-event" class="max-w-4xl mx-auto my-12">
-        <h2 class="text-2xl font-bold mb-6 text-center text-purple-700">Unsere letzten Aufführungen</h2>
+        <h2 class="text-2xl font-bold mb-6 text-center text-peach">
+          Unsere letzten Aufführungen
+        </h2>
         <div class="grid md:grid-cols-2 gap-8">
-          <div class="last-event-card bg-white rounded-lg shadow p-4 flex flex-col md:flex-row items-center">
+          <div
+            class="last-event-card bg-white rounded-lg shadow p-4 flex flex-col md:flex-row items-center"
+          >
             <div class="flex-1 mb-4 md:mb-0 md:mr-4">
               <h3 class="text-xl font-semibold mb-1">Momo</h3>
               <p class="text-gray-600 mb-1">Ostern 2025</p>
-              <address class="not-italic text-gray-700 mb-1">Stadttheater Neuburg</address>
-              <p class="mb-2"> Ein spannendes Theaterstück, das die Zuschauer fesseln wird.</p>
+              <address class="not-italic text-gray-700 mb-1">
+                Stadttheater Neuburg
+              </address>
+              <p class="mb-2">
+                Ein spannendes Theaterstück, das die Zuschauer fesseln wird.
+              </p>
               <a href="page_1_last_theater.html">
-                <button class="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">mehr von Momo erfahren</button>
+                <button
+                  class="px-4 py-2 bg-daisy text-darkerOlive rounded hover:bg-darkerOlive hover:text-daisy transition"
+                >
+                  mehr von Momo erfahren
+                </button>
               </a>
             </div>
             <figure>
               <picture>
-                <source srcset="/img/Startseite/Plakat_Momo_smaller.JPG" media="(max-width: 800px)" />
+                <source
+                  srcset="/img/Startseite/Plakat_Momo_smaller.JPG"
+                  media="(max-width: 800px)"
+                />
                 <source srcset="/img/Startseite/Plakat_Momo.JPG" />
                 <img
                   src="/img/Startseite/Plakat_Momo_smaller.JPG"
@@ -273,32 +306,44 @@
                   class="rounded-lg shadow w-48 h-64 object-cover"
                 />
               </picture>
-              <figcaption class="text-center text-sm text-gray-500 mt-2">Plakat Momo 2025</figcaption>
+              <figcaption class="text-center text-sm text-gray-500 mt-2">
+                Plakat Momo 2025
+              </figcaption>
             </figure>
           </div>
-          <div class="last-event-card bg-white rounded-lg shadow p-4 flex flex-col md:flex-row items-center">
+          <div
+            class="last-event-card bg-white rounded-lg shadow p-4 flex flex-col md:flex-row items-center"
+          >
             <div class="flex-1 mb-4 md:mb-0 md:mr-4">
               <h3 class="text-xl font-semibold mb-1">Gott des Gemetzels</h3>
               <p class="text-gray-600 mb-1">Januar 2025</p>
               <address class="not-italic text-gray-700 mb-1">Box 15</address>
-              <p>Ein spannendes Theaterstück, das die Zuschauer fesseln wird.</p>
+              <p>
+                Ein spannendes Theaterstück, das die Zuschauer fesseln wird.
+              </p>
             </div>
             <figure>
               <picture>
-                <source srcset="/img/Startseite/Plakat_Gott_des_Gemetzels_smaller.JPG" media="(max-width: 800px)" />
-                <source srcset="/img/Startseite/Plakat_Gott_des_Gemetzels.JPG" />
+                <source
+                  srcset="/img/Startseite/Plakat_Gott_des_Gemetzels_smaller.JPG"
+                  media="(max-width: 800px)"
+                />
+                <source
+                  srcset="/img/Startseite/Plakat_Gott_des_Gemetzels.JPG"
+                />
                 <img
                   src="/img/Startseite/Plakat_Gott_des_Gemetzels_smaller.JPG"
                   alt="Plakat Gott des Gemetzels 2025"
                   class="rounded-lg shadow w-48 h-64 object-cover"
                 />
               </picture>
-              <figcaption class="text-center text-sm text-gray-500 mt-2">Plakat Gott des Gemetzels 2025</figcaption>
+              <figcaption class="text-center text-sm text-gray-500 mt-2">
+                Plakat Gott des Gemetzels 2025
+              </figcaption>
             </figure>
           </div>
         </div>
       </section>
-      
     </main>
     <footer></footer>
   </body>
