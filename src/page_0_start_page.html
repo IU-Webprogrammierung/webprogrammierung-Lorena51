@@ -137,12 +137,29 @@
           </div>
         </div>
 
+        <!--         
         <div class="flex justify-center">
           <button
-            class="w-1/2 mt-6 px-6 py-2 bg-daisy text-darkerOlive rounded hover:bg-darkerOlive hover:text-daisy transition"
+            class="peer w-1/2 mt-6 px-6 py-2 bg-daisy text-darkerOlive rounded hover:bg-darkerOlive hover:text-daisy transition"
           >
             alle Veranstaltungen
           </button>
+       
+        </div> -->
+
+        <div class="flex flex-col items-center">
+          <input type="checkbox" id="toggleEvents" class="hidden peer" />
+          <label
+            for="toggleEvents"
+            class="w-1/2 mt-6 px-6 py-2 bg-daisy text-darkerOlive rounded hover:bg-darkerOlive hover:text-daisy transition text-center cursor-pointer"
+          >
+            alle Veranstaltungen</label
+          >
+          <span
+            class="mt-4 hidden peer-checked:block text-darkerOlive font-semibold"
+          >
+            Keine weiteren Events verfügbar
+          </span>
         </div>
       </section>
 
