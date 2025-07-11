@@ -618,6 +618,10 @@ video {
   margin: 1rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-\[5\%\] {
   margin-left: 5%;
   margin-right: 5%;
