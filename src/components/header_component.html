@@ -5,10 +5,10 @@
   <link href="./output.css" rel="stylesheet" />
   <title>Header</title>
 </head>
-<nav class="sticky top-0 z-20 flex w-full items-center justify-between bg-white/90 px-4 py-2 shadow">
+<nav class="sticky top-0 z-10 flex w-full items-center justify-between bg-white/90 px-4 py-1 shadow">
   <!-- Logo -->
-  <a href="/src/page_0_start_page.html" class="flex items-center">
-    <img src="/img/Header_Footer/Logo_Jugendtheater.jpg" alt="Logo" class="h-14 w-14 object-cover" />
+  <a href="/src/index.html" class="flex items-center">
+    <img src="/img/Header_Footer/Logo_Jugendtheater.jpg" alt="Logo" class="h-10 w-10 object-cover" />
   </a>
 
   <!-- Hamburger Toggle -->
@@ -18,9 +18,8 @@
       <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
   </label>
-
   <!-- Menu -->
-  <div class="fixed top-[64px] right-0 z-10 hidden h-screen w-3/4 flex-col gap-2 bg-white px-4 py-6 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none" id="menu">
+  <div id="menu" class="fixed top-[16px] right-0 z-10 hidden h-screen w-3/4 flex-col gap-2 bg-peach px-4 py-4 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none" id="menu">
     <nav>
       <ul class="flex w-full flex-col gap-4 text-base text-gray-700 md:flex-row md:gap-6 md:pt-0">
         <!--Impressionen -->
@@ -30,7 +29,7 @@
             <summary class="hover:text-peach cursor-pointer">Impressionen</summary>
             <ul class="mt-2 ml-4 space-y-2">
               <li>
-                <a href="/src/page_1_last_theater.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Momo</a>
+                <a href="/src/index.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Momo</a>
               </li>
             </ul>
           </details>
@@ -38,10 +37,10 @@
 
           <!-- Desktop: Hoverable -->
           <li class=" hidden relative group md:p-4 py-3 px-0 md:block">
-            <a href="/src/page_1_last_theater.html" class="hover:text-peach">Impressionen</a>
-            <ul class="backgr absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-white shadow-lg group-hover:block">
+            <a href="/src/index.html" class="hover:text-peach">Impressionen</a>
+            <ul class="backgr absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block">
               <li>
-                <a href="/src/page_1_last_theater.html" class="text-#333 hover:bg-text-peach block rounded px-4 py-2 transition hover:text-white">Momo</a>
+                <a href="/src/index.html" class="text-#333 hover:bg-text-peach block rounded px-4 py-2 transition hover:text-white">Momo</a>
               </li>
             </ul>
           </li>
@@ -62,7 +61,7 @@
           </details>
           <li class="hidden relative group md:p-4 py-3 px-0 md:block">
             <a href="/src/page_2_acting.html" class="text-color_primary hover:text-peach">Schauspiel</a>
-            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-white shadow-lg group-hover:block">
+            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block">
               <li>
                 <a href="/src/page_2_acting.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Proben</a>
               </li>
@@ -91,7 +90,7 @@
           </details>
           <li class="hidden relative group md:p-4 py-3 px-0 md:block">
             <a href="/src/page_4_diy.html" class="text-color_primary hover:text-peach">Kreativwerkstatt</a>
-            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[180px] rounded bg-white shadow-lg group-hover:block">
+            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[180px] rounded bg-peach shadow-lg group-hover:block">
               <li>
                 <a href="/src/page_4_diy.html#costume" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Kostüme</a>
               </li>
@@ -108,3 +107,4 @@
     </nav>
   </div>
 </nav>
+  
