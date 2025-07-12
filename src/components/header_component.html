@@ -1,0 +1,119 @@
+<head>
+  <meta name="author" content="Lorena51" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/js/include.js" defer></script>
+  <link href="./output.css" rel="stylesheet" />
+  <title>Header</title>
+</head>
+<nav class="sticky top-0 z-10 flex w-full items-center justify-between bg-white/90 px-4 py-1 shadow">
+  <!-- Logo -->
+  <a href="/src/index.html" class="flex items-center">
+    <img src="/img/Header_Footer/Logo_Jugendtheater.jpg" alt="Logo" class="h-10 w-10 object-cover" />
+  </a>
+
+  <!-- Hamburger Toggle -->
+  <input type="checkbox" id="menu-toggle" class="peer hidden" />
+  <!-- Hamburger Icon (visible when menu is closed) -->
+  <label for="menu-toggle" class="block cursor-pointer p-2 md:hidden peer-checked:hidden">
+    <svg class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+  </label>
+  <!-- X Icon (visible when menu is open) -->
+  <label for="menu-toggle" class="hidden cursor-pointer p-2 md:hidden absolute top-6 right-4 z-20 bg-white/80 rounded-full hover:bg-peach transition peer-checked:block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round"/>
+      <line x1="6" y1="18" x2="18" y2="6" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </label>
+
+  <!-- Menu -->
+  <div id="menu" class="fixed top-[16px] right-0 z-10 hidden h-screen w-2/4 flex-col gap-2 bg-peach px-4 py-4 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none" id="menu"> 
+    <nav>
+      <ul class="flex w-full flex-col gap-4 text-base text-gray-700 md:flex-row md:gap-6 md:pt-0">
+        <!--Impressionen -->
+        <li class="group md:relative">
+          <!-- Mobile: Clickable -->
+          <details class="md:hidden">
+            <summary class="hover:text-white cursor-pointer">Impressionen</summary>
+            <ul class="mt-2 ml-4 space-y-2">
+              <li>
+                <a href="/index.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Momo</a>
+              </li>
+            </ul>
+          </details>
+        
+
+          <!-- Desktop: Hoverable -->
+          <li class="hidden relative group md:block">
+            <a href="/index.html" class="hover:text-peach">Impressionen</a>
+            <ul class="backgr absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block">
+              <li>
+                <a href="/index.html" class="text-#333 hover:bg-text-peach block rounded px-4 py-2 transition hover:text-white">Momo</a>
+              </li>
+            </ul>
+          </li>
+        </li>
+
+        <!-- Schauspiel -->
+        <li class="group md:relative">
+          <details class="md:hidden">
+            <summary class="hover:text-white cursor-pointer">Schauspiel</summary>
+            <ul class="mt-2 ml-4 space-y-2">
+              <li>
+                <a href="/src/page_2_acting.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Proben</a>
+              </li>
+              <li>
+                <a href="/src/page_3_actors.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Schauspieler</a>
+              </li>
+            </ul>
+          </details>
+          <li class="hidden relative group md:block">
+            <a href="/src/page_2_acting.html" class="text-color_primary hover:text-peach">Schauspiel</a>
+            <ul class="backgr absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block">
+              <li>
+                <a href="/src/page_2_acting.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Proben</a>
+              </li>
+              <li>                
+                <a href="/src/page_3_actors.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Schauspieler</a>
+              </li>
+            </ul>
+          </li>
+        </li>
+
+        <!-- Kreativwerkstatt -->
+        <li class="group md:relative">
+          <details class="md:hidden">
+            <summary class="hover:text-white cursor-pointer">Kreativwerkstatt</summary>
+            <ul class="mt-2 ml-4 space-y-2">
+              <li>
+                <a href="/src/page_4_diy.html#costume" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Kostüme</a>
+              </li>
+              <li>
+                <a href="/src/page_4_diy.html#requisites" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Requisiten</a>
+              </li>
+              <li>
+                <a href="/src/page_4_diy.html#stage-elements" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Bühne</a>
+              </li>
+            </ul>
+          </details>
+          <li class="hidden relative group md:block">
+            <a href="/src/page_4_diy.html" class="text-color_primary hover:text-peach">Kreativwerkstatt</a>
+            <ul class="backgr absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block">
+              <li>
+                <a href="/src/page_4_diy.html#costume" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Kostüme</a>
+              </li>
+              <li>
+                <a href="/src/page_4_diy.html#requisites" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Requisiten</a>
+              </li>
+              <li>
+                <a href="/src/page_4_diy.html#stage-elements" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Bühne</a>
+              </li>
+            </ul>
+          </li>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+  
