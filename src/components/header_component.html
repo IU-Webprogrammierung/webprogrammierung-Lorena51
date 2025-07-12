@@ -13,20 +13,29 @@
 
   <!-- Hamburger Toggle -->
   <input type="checkbox" id="menu-toggle" class="peer hidden" />
-  <label for="menu-toggle" class="block cursor-pointer p-2 md:hidden">
+  <!-- Hamburger Icon (visible when menu is closed) -->
+  <label for="menu-toggle" class="block cursor-pointer p-2 md:hidden peer-checked:hidden">
     <svg class="h-6 w-6 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
     </svg>
   </label>
+  <!-- X Icon (visible when menu is open) -->
+  <label for="menu-toggle" class="hidden cursor-pointer p-2 md:hidden absolute top-6 right-4 z-20 bg-white/80 rounded-full hover:bg-peach transition peer-checked:block">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <line x1="6" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round"/>
+      <line x1="6" y1="18" x2="18" y2="6" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </label>
+
   <!-- Menu -->
-  <div id="menu" class="fixed top-[16px] right-0 z-10 hidden h-screen w-3/4 flex-col gap-2 bg-peach px-4 py-4 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none" id="menu">
+  <div id="menu" class="fixed top-[16px] right-0 z-10 hidden h-screen w-2/4 flex-col gap-2 bg-peach px-4 py-4 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none" id="menu"> 
     <nav>
       <ul class="flex w-full flex-col gap-4 text-base text-gray-700 md:flex-row md:gap-6 md:pt-0">
         <!--Impressionen -->
         <li class="group md:relative">
           <!-- Mobile: Clickable -->
           <details class="md:hidden">
-            <summary class="hover:text-peach cursor-pointer">Impressionen</summary>
+            <summary class="hover:text-white cursor-pointer">Impressionen</summary>
             <ul class="mt-2 ml-4 space-y-2">
               <li>
                 <a href="/index.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Momo</a>
@@ -49,7 +58,7 @@
         <!-- Schauspiel -->
         <li class="group md:relative">
           <details class="md:hidden">
-            <summary class="hover:text-peach cursor-pointer">Schauspiel</summary>
+            <summary class="hover:text-white cursor-pointer">Schauspiel</summary>
             <ul class="mt-2 ml-4 space-y-2">
               <li>
                 <a href="/src/page_2_acting.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Proben</a>
@@ -65,7 +74,7 @@
               <li>
                 <a href="/src/page_2_acting.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Proben</a>
               </li>
-              <li>
+              <li>                
                 <a href="/src/page_3_actors.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Schauspieler</a>
               </li>
             </ul>
@@ -75,7 +84,7 @@
         <!-- Kreativwerkstatt -->
         <li class="group md:relative">
           <details class="md:hidden">
-            <summary class="hover:text-peach cursor-pointer">Kreativwerkstatt</summary>
+            <summary class="hover:text-white cursor-pointer">Kreativwerkstatt</summary>
             <ul class="mt-2 ml-4 space-y-2">
               <li>
                 <a href="/src/page_4_diy.html#costume" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Kostüme</a>
@@ -90,7 +99,7 @@
           </details>
           <li class="hidden relative group md:p-4 py-3 px-0 md:block">
             <a href="/src/page_4_diy.html" class="text-color_primary hover:text-peach">Kreativwerkstatt</a>
-            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[180px] rounded bg-peach shadow-lg group-hover:block">
+            <ul class="absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block">
               <li>
                 <a href="/src/page_4_diy.html#costume" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Kostüme</a>
               </li>
