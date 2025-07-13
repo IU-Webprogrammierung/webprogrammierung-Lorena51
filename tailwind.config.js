@@ -1,7 +1,8 @@
  /** @type {import('tailwindcss').Config} */
  export default {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
+content: [
+    './src/**/*.{html,js}',
+  ],  theme: {
     extend: {
       colors: {
         transparent: 'transparent',
@@ -23,7 +24,7 @@
         backgroundTransparent: 'rgba(255,255,255,0.5)',
 
         darkerOlive: '#585840',
-      olive: '#A3A380',
+        olive: '#A3A380',
         golden: '#D7CE93',
         daisy: '#EFEBCE',
         rose: '#D8A48F',
