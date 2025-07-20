@@ -19,7 +19,7 @@
     <title>Kreativwerkstatt</title>
   </head>
   <body>
-    <header id="header-placeholder" class="top-0"></header>
+    <header id="header-placeholder" class="top-0 z-30"></header>
 
     <nav
       id="local-navigation-diy"
@@ -42,30 +42,43 @@
       >
     </nav>
 
-    <main class="bg-white/70 max-w-6xl mx-auto px-4 py-8 rounded-lg shadow">
+    <main class="bg-daisy">
       <!-- Kostüme -->
       <section id="costume" class="pt-12">
         <h1 class="sr-only">Kostüme</h1>
-        <div class="grid gap-8">
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/Ergebnis_SchildkrötenPanzer.jpg"
-              alt="Fertiger Schildkrötenpanzer für Kassiopeia aus Schaumstoff"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h2 class="text-xl font-bold mb-2">
-                Panzer für Schildkröte Kassiopeia
-              </h2>
-              <p>
-                Der Panzer der Schildkröte "Kassiopeia" besteht aus einem
-                leichten Schaumstoff. Wichtig ist hierbei, dass dieser nicht zu
-                groß ist, damit die Schauspielerin sich noch gut bewegen kann.
-                Wenn der Panzer jedoch zu klein ist, ist die Gefahr, dass er vom
-                Publikum nicht oder nur als Buckel wahrgenommen wird.
-              </p>
-            </div>
+        <div class="grid md:grid-cols-2 gap-6 items-center">
+          <img
+            src="/img/Kreativwerkstatt/Ergebnis_SchildkrötenPanzer.jpg"
+            alt="Fertiger Schildkrötenpanzer für Kassiopeia aus Schaumstoff"
+            class="w-2/3 md:w-2/3 mx-auto rounded-lg"
+          />
+          <div class="pl-4">
+            <h2 class="text-xl font-bold mb-2">
+              Panzer für Schildkröte Kassiopeia
+            </h2>
+            <p>
+              Der Panzer der Schildkröte "Kassiopeia" besteht aus einem leichten
+              Schaumstoff. Wichtig ist hierbei, dass dieser nicht zu groß ist,
+              damit die Schauspielerin sich noch gut bewegen kann. Wenn der
+              Panzer jedoch zu klein ist, ist die Gefahr, dass er vom Publikum
+              nicht oder nur als Buckel wahrgenommen wird.
+            </p>
+            <button
+              onclick="document.getElementById('moreDetails').classList.toggle('hidden')"
+              class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Mehr Details anzeigen
+            </button>
           </div>
+        </div>
+        <!-- Hidden content to expand -->
+        <div id="moreDetails" class="hidden">
+          <h3 class="text-lg font-semibold mb-2">Weitere Details</h3>
+          <p>
+            Hier können weitere Details zum Bau des Schildkrötenpanzers
+            hinzugefügt werden.
+          </p>
+
           <div class="grid md:grid-cols-2 gap-6 items-center">
             <img
               src="/img/Kreativwerkstatt/Material_SchildkrötenPanzer.jpg"
@@ -136,6 +149,7 @@
             </div>
           </div>
         </div>
+
         <!-- Weste -->
         <div class="grid gap-8 mt-12">
           <div class="grid md:grid-cols-2 gap-6 items-center">
@@ -150,61 +164,69 @@
                 Baumwollstoff in dunklen Farben, um einen Kontrast zu dem hellen
                 Schildkrötenpanzer zu bilden.
               </p>
+              <img
+                src="/img/Kreativwerkstatt/Weste_Schildkröte.JPG"
+                alt="Fertige karierte Weste für die Schildkröte Kassiopeia"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <button
+                onclick="document.getElementById('moreDetailsWeste').classList.toggle('hidden')"
+                class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+              >
+                Mehr Details anzeigen
+              </button>
             </div>
-            <img
-              src="/img/Kreativwerkstatt/Weste_Schildkröte.JPG"
-              alt="Fertige karierte Weste für die Schildkröte Kassiopeia"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
           </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <div class="pr-4">
-              <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-              <ul class="list-disc list-inside">
-                <li>Grundschnitt Weste</li>
-                <li>Stoff für Protoyp</li>
-                <li>Stoff für Weste</li>
-                <li>Faden</li>
-                <li>Nähmaschine und Zubehör</li>
-              </ul>
+          <div id="moreDetailsWeste" class="hidden">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <div class="pr-4">
+                <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                <ul class="list-disc list-inside">
+                  <li>Grundschnitt Weste</li>
+                  <li>Stoff für Protoyp</li>
+                  <li>Stoff für Weste</li>
+                  <li>Faden</li>
+                  <li>Nähmaschine und Zubehör</li>
+                </ul>
+              </div>
+              <img
+                src="/img/Kreativwerkstatt/02_Material_Weste_Schildkröte.jpg"
+                alt="Materialien für die Weste: Stoff, Faden, Schnittmuster, Nähmaschine"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
             </div>
-            <img
-              src="/img/Kreativwerkstatt/02_Material_Weste_Schildkröte.jpg"
-              alt="Materialien für die Weste: Stoff, Faden, Schnittmuster, Nähmaschine"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <div class="pr-4">
-              <h3 class="text-lg font-semibold mb-2">Prozess</h3>
-              <ul class="list-disc list-inside">
-                <li>Erweiterung des Schnittes</li>
-                <li>Stoff mit Markierungen ausschneiden</li>
-                <li>Bügeleinlage aufbügeln</li>
-                <li>Versäumen</li>
-                <li>Einzelteile zusammen nähen</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <div class="pr-4">
+                <h3 class="text-lg font-semibold mb-2">Prozess</h3>
+                <ul class="list-disc list-inside">
+                  <li>Erweiterung des Schnittes</li>
+                  <li>Stoff mit Markierungen ausschneiden</li>
+                  <li>Bügeleinlage aufbügeln</li>
+                  <li>Versäumen</li>
+                  <li>Einzelteile zusammen nähen</li>
+                </ul>
+              </div>
+              <img
+                src="/img/Kreativwerkstatt/02_Prozess_Weste_Schildkröte.JPG"
+                alt="Nähprozess der Weste für Kassiopeia: Zuschnitt und Zusammennähen"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
             </div>
-            <img
-              src="/img/Kreativwerkstatt/02_Prozess_Weste_Schildkröte.JPG"
-              alt="Nähprozess der Weste für Kassiopeia: Zuschnitt und Zusammennähen"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <div class="pr-4">
-              <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
-              <ul class="list-disc list-inside">
-                <li>Knöpfe anbringen</li>
-                <li>Anprobe</li>
-                <li>Zusätzliche Tasche annähen</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <div class="pr-4">
+                <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
+                <ul class="list-disc list-inside">
+                  <li>Knöpfe anbringen</li>
+                  <li>Anprobe</li>
+                  <li>Zusätzliche Tasche annähen</li>
+                </ul>
+              </div>
+              <img
+                src="/img/Kreativwerkstatt/02_Letzer_schliff_Weste_Schildkröte.JPG"
+                alt="Letzter Schliff an der Weste: Knöpfe und Tasche werden angebracht"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
             </div>
-            <img
-              src="/img/Kreativwerkstatt/02_Letzer_schliff_Weste_Schildkröte.JPG"
-              alt="Letzter Schliff an der Weste: Knöpfe und Tasche werden angebracht"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
           </div>
         </div>
         <!-- Bibigirl Kleid -->
@@ -226,54 +248,62 @@
                 Aussehen in kühlen Farben.
               </p>
             </div>
+            <button
+              onclick="document.getElementById('moreDetailsDress').classList.toggle('hidden')"
+              class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Mehr Details anzeigen
+            </button>
           </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/03_Bibigirl_Start.JPG"
-              alt="Materialien für das Bibigirl-Kleid: Glitzerstoff, Netzstoff, Knöpfe, Broschen"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-              <ul class="list-disc list-inside">
-                <li>Glitzerstoff</li>
-                <li>Schimmernderstoff</li>
-                <li>Silberner Glitzer Netzstoff</li>
-                <li>Faden</li>
-                <li>Knöpfe und Broschen</li>
-              </ul>
+          <div id="moreDetailsDress" class="hidden">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/03_Bibigirl_Start.JPG"
+                alt="Materialien für das Bibigirl-Kleid: Glitzerstoff, Netzstoff, Knöpfe, Broschen"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                <ul class="list-disc list-inside">
+                  <li>Glitzerstoff</li>
+                  <li>Schimmernderstoff</li>
+                  <li>Silberner Glitzer Netzstoff</li>
+                  <li>Faden</li>
+                  <li>Knöpfe und Broschen</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/03_Bibigirl_Prozess.JPG"
-              alt="Nähprozess des Bibigirl-Kleids: Zuschnitt und Verarbeitung der Stoffe"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-              <ul class="list-disc list-inside">
-                <li>Glitzerstoff</li>
-                <li>Schimmernderstoff</li>
-                <li>Silberner Glitzer Netzstoff</li>
-                <li>Faden</li>
-                <li>Knöpfe und Broschen</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/03_Bibigirl_Prozess.JPG"
+                alt="Nähprozess des Bibigirl-Kleids: Zuschnitt und Verarbeitung der Stoffe"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                <ul class="list-disc list-inside">
+                  <li>Glitzerstoff</li>
+                  <li>Schimmernderstoff</li>
+                  <li>Silberner Glitzer Netzstoff</li>
+                  <li>Faden</li>
+                  <li>Knöpfe und Broschen</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/03_Bibigirl_Kleid.JPG"
-              alt="Letzter Schliff am Bibigirl-Kleid: Anprobe, Erweiterung, Verzierung"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
-              <ul class="list-disc list-inside">
-                <li>Anprobe mit Rock</li>
-                <li>Erweiterung</li>
-                <li>Knöpfe und Broschen anbringen</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/03_Bibigirl_Kleid.JPG"
+                alt="Letzter Schliff am Bibigirl-Kleid: Anprobe, Erweiterung, Verzierung"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
+                <ul class="list-disc list-inside">
+                  <li>Anprobe mit Rock</li>
+                  <li>Erweiterung</li>
+                  <li>Knöpfe und Broschen anbringen</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -296,122 +326,139 @@
               alt="Leuchtende Stundenblumen im Dunkeln mit LED-Effekt"
               class="w-2/3 md:w-1/2 mx-auto rounded-lg"
             />
+            <button
+              onclick="document.getElementById('moreDetailsFlower').classList.toggle('hidden')"
+              class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Mehr Details anzeigen
+            </button>
           </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <div class="pr-4">
-              <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-              <ul class="list-disc list-inside">
-                <li>Leuchtkerzen mit Fernbedienung</li>
-                <li>Leuchwedel</li>
-                <li>Krepppapier</li>
-                <li>Angelschnur</li>
-                <li>Heißkleber</li>
-                <li>Säge</li>
-              </ul>
+          <div id="moreDetailsFlower" class="hidden">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <div class="pr-4">
+                <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                <ul class="list-disc list-inside">
+                  <li>Leuchtkerzen mit Fernbedienung</li>
+                  <li>Leuchwedel</li>
+                  <li>Krepppapier</li>
+                  <li>Angelschnur</li>
+                  <li>Heißkleber</li>
+                  <li>Säge</li>
+                </ul>
+              </div>
+              <img
+                src="/img/Kreativwerkstatt/Blumen_Start.JPG"
+                alt="Materialien für Stundenblumen: LED-Kerzen, Krepppapier, Leuchtwedel"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
             </div>
-            <img
-              src="/img/Kreativwerkstatt/Blumen_Start.JPG"
-              alt="Materialien für Stundenblumen: LED-Kerzen, Krepppapier, Leuchtwedel"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <div class="pr-4">
-              <h3 class="text-lg font-semibold mb-2">Prozess</h3>
-              <ul class="list-disc list-inside">
-                <li>Kerzen vorderen Teil absägen</li>
-                <li>Leuchtwedel Elektronik entfernen</li>
-                <li>Beides zusammenkleben</li>
-                <li>Kreppblumen ankleben</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <div class="pr-4">
+                <h3 class="text-lg font-semibold mb-2">Prozess</h3>
+                <ul class="list-disc list-inside">
+                  <li>Kerzen vorderen Teil absägen</li>
+                  <li>Leuchtwedel Elektronik entfernen</li>
+                  <li>Beides zusammenkleben</li>
+                  <li>Kreppblumen ankleben</li>
+                </ul>
+              </div>
+              <img
+                src="/img/Kreativwerkstatt/Blumen_Prozess.JPG"
+                alt="Bauprozess der Stundenblumen: Zusammenbau von LED und Krepppapier"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
             </div>
-            <img
-              src="/img/Kreativwerkstatt/Blumen_Prozess.JPG"
-              alt="Bauprozess der Stundenblumen: Zusammenbau von LED und Krepppapier"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <div class="pr-4">
-              <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
-              <ul class="list-disc list-inside">
-                <li>Leuchtfasern aufteilen</li>
-                <li>Anglerschnur anbringen</li>
-                <li>Blumen an Seilzügen befestigen</li>
-              </ul>
-            </div>
-            <img
-              src="/img/Kreativwerkstatt/Blumen_Letzter_Schliff.JPG"
-              alt="Letzter Schliff an den Stundenblumen: Montage an Seilzügen"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-          </div>
-        </div>
-        <div class="grid gap-8 mt-12">
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/Blumen_Hell.JPG"
-              alt="Stundenblumen bei Tageslicht auf der Bühne"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h2 class="text-xl font-bold mb-2">Uhren bei Meister Hora</h2>
-              <p>
-                Die Uhren sind große, bemalte Kulissenobjekte, die die Zeit
-                symbolisieren und auf der Bühne mit Seilzügen befestigt werden.
-              </p>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <div class="pr-4">
+                <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
+                <ul class="list-disc list-inside">
+                  <li>Leuchtfasern aufteilen</li>
+                  <li>Anglerschnur anbringen</li>
+                  <li>Blumen an Seilzügen befestigen</li>
+                </ul>
+              </div>
+              <img
+                src="/img/Kreativwerkstatt/Blumen_Letzter_Schliff.JPG"
+                alt="Letzter Schliff an den Stundenblumen: Montage an Seilzügen"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
             </div>
           </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/05_Uhren_Materialien_2.JPG"
-              alt="Materialien für Bühnenuhren: Keilrahmen, Farben, Anglerschnur"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-              <ul class="list-disc list-inside">
-                <li>
-                  Runde und ovale Keilrahmen (je 2 Stück 50 cm und 30 cm
-                  Durchmesser)
-                </li>
-                <li>Acryl Farbe</li>
-                <li>Edding</li>
-                <li>Anglerschnur</li>
-                <li>Bohrmaschine</li>
-                <li>Vorlage Ziffernblatt ausgedruckt</li>
-              </ul>
+          <div class="grid gap-8 mt-12">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/Blumen_Hell.JPG"
+                alt="Stundenblumen bei Tageslicht auf der Bühne"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h2 class="text-xl font-bold mb-2">Uhren bei Meister Hora</h2>
+                <p>
+                  Die Uhren sind große, bemalte Kulissenobjekte, die die Zeit
+                  symbolisieren und auf der Bühne mit Seilzügen befestigt
+                  werden.
+                </p>
+              </div>
+              <button
+                onclick="document.getElementById('moreDetailsClock').classList.toggle('hidden')"
+                class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+              >
+                Mehr Details anzeigen
+              </button>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/05_Uhren_Prozess.JPG"
-              alt="Bemalung der Bühnenuhren: Grundierung und Ziffernblattgestaltung"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Prozess</h3>
-              <ul class="list-disc list-inside">
-                <li>Weiß grundieren</li>
-                <li>Zahlenposition nach Vorlage markieren</li>
-                <li>Zahlen und Deko aufmalen</li>
-              </ul>
-            </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/05_Uhren_Materialien.JPG"
-              alt="Letzter Schliff an Bühnenuhren: Goldene Zahlen und Befestigung"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
-              <ul class="list-disc list-inside">
-                <li>Goldene Zahlen umranden</li>
-                <li>Befestigungslöcher bohren</li>
-                <li>Anglerschnur anbringen</li>
-                <li>Uhren am Seilzug anbringen und ausrichten</li>
-              </ul>
+            <div id="moreDetailsClock" class="hidden">
+              <div class="grid md:grid-cols-2 gap-6 items-center">
+                <img
+                  src="/img/Kreativwerkstatt/05_Uhren_Materialien_2.JPG"
+                  alt="Materialien für Bühnenuhren: Keilrahmen, Farben, Anglerschnur"
+                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+                />
+                <div class="pl-4">
+                  <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                  <ul class="list-disc list-inside">
+                    <li>
+                      Runde und ovale Keilrahmen (je 2 Stück 50 cm und 30 cm
+                      Durchmesser)
+                    </li>
+                    <li>Acryl Farbe</li>
+                    <li>Edding</li>
+                    <li>Anglerschnur</li>
+                    <li>Bohrmaschine</li>
+                    <li>Vorlage Ziffernblatt ausgedruckt</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6 items-center">
+                <img
+                  src="/img/Kreativwerkstatt/05_Uhren_Prozess.JPG"
+                  alt="Bemalung der Bühnenuhren: Grundierung und Ziffernblattgestaltung"
+                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+                />
+                <div class="pl-4">
+                  <h3 class="text-lg font-semibold mb-2">Prozess</h3>
+                  <ul class="list-disc list-inside">
+                    <li>Weiß grundieren</li>
+                    <li>Zahlenposition nach Vorlage markieren</li>
+                    <li>Zahlen und Deko aufmalen</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6 items-center">
+                <img
+                  src="/img/Kreativwerkstatt/05_Uhren_Materialien.JPG"
+                  alt="Letzter Schliff an Bühnenuhren: Goldene Zahlen und Befestigung"
+                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+                />
+                <div class="pl-4">
+                  <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
+                  <ul class="list-disc list-inside">
+                    <li>Goldene Zahlen umranden</li>
+                    <li>Befestigungslöcher bohren</li>
+                    <li>Anglerschnur anbringen</li>
+                    <li>Uhren am Seilzug anbringen und ausrichten</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -433,64 +480,73 @@
               alt="Seitenwände des Amphitheaters als Bühnenhintergrund"
               class="w-2/3 md:w-1/2 mx-auto rounded-lg"
             />
+            <button
+              onclick="document.getElementById('moreDetailsPainting').classList.toggle('hidden')"
+              class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Mehr Details anzeigen
+            </button>
           </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/SeitenWand_Materialien.JPG"
-              alt="Materialien für Seitenwände: Farben, Pinsel, Schnur, Maßband"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-              <ul class="list-disc list-inside">
-                <li>Seitenwand</li>
-                <li>Wandfarbe (Weiß, schwarz, Terra, Mokka)</li>
-                <li>Pinsel, Schwamm, Malerrolle</li>
-                <li>Schlagschnur, Baumwoll Schnur</li>
-                <li>Waage</li>
-                <li>Klebeband, Buntstift</li>
-                <li>Meterstab / Maßband</li>
-                <li>Feuerschutzmittel</li>
-              </ul>
+          <div id="moreDetailsPainting" class="hidden">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/SeitenWand_Materialien.JPG"
+                alt="Materialien für Seitenwände: Farben, Pinsel, Schnur, Maßband"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                <ul class="list-disc list-inside">
+                  <li>Seitenwand</li>
+                  <li>Wandfarbe (Weiß, schwarz, Terra, Mokka)</li>
+                  <li>Pinsel, Schwamm, Malerrolle</li>
+                  <li>Schlagschnur, Baumwoll Schnur</li>
+                  <li>Waage</li>
+                  <li>Klebeband, Buntstift</li>
+                  <li>Meterstab / Maßband</li>
+                  <li>Feuerschutzmittel</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/Bühne_SeitenTeileSäulen_Process.JPG"
-              alt="Malprozess der Seitenwände: Grundierung und Strukturierung"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Prozess</h3>
-              <ul class="list-disc list-inside">
-                <li>Grundieren</li>
-                <li>Referenzbild suchen und ausdrucken</li>
-                <li>Farbmischungen abwiegen und notieren</li>
-                <li>Grundlinien mit Schlagschnur und Zirkel anbringen</li>
-                <li>Grundstruktur malen und fotografieren</li>
-                <li>Details für Perspektive am Tablet skizzieren</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/Bühne_SeitenTeileSäulen_Process.JPG"
+                alt="Malprozess der Seitenwände: Grundierung und Strukturierung"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Prozess</h3>
+                <ul class="list-disc list-inside">
+                  <li>Grundieren</li>
+                  <li>Referenzbild suchen und ausdrucken</li>
+                  <li>Farbmischungen abwiegen und notieren</li>
+                  <li>Grundlinien mit Schlagschnur und Zirkel anbringen</li>
+                  <li>Grundstruktur malen und fotografieren</li>
+                  <li>Details für Perspektive am Tablet skizzieren</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/SeitenWand_Letzer_Schliff.JPG"
-              alt="Letzter Schliff an den Seitenwänden: Details und Feuerschutz"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Letzer Schlif</h3>
-              <ul class="list-disc list-inside">
-                <li>Details von Tablet übertragen</li>
-                <li>Struktur mit Schwamm auftragen</li>
-                <li>
-                  Feuerschutzmittel auf die Rückseite der Holzwände auftragen
-                </li>
-                <li>Aufbau auf der Bühne</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/SeitenWand_Letzer_Schliff.JPG"
+                alt="Letzter Schliff an den Seitenwänden: Details und Feuerschutz"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Letzer Schlif</h3>
+                <ul class="list-disc list-inside">
+                  <li>Details von Tablet übertragen</li>
+                  <li>Struktur mit Schwamm auftragen</li>
+                  <li>
+                    Feuerschutzmittel auf die Rückseite der Holzwände auftragen
+                  </li>
+                  <li>Aufbau auf der Bühne</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="grid gap-8 mt-12">
           <div class="grid md:grid-cols-2 gap-6 items-center">
             <img
@@ -508,50 +564,58 @@
                 Atmosphäre und zur Dynamik der Inszenierung bei.
               </p>
             </div>
+            <button
+              onclick="document.getElementById('moreDetailsColumn').classList.toggle('hidden')"
+              class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Mehr Details anzeigen
+            </button>
           </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/SeitenWand_Prozess_Farbe.JPG"
-              alt="Materialien für Säulen: Schallrohre, Farben, Bohrmaschine"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-              <ul class="list-disc list-inside">
-                <li>3x Schallrohre mit 40cm Durchmesser</li>
-                <li>Grundfarbe Seitenwände</li>
-                <li>Malerrolle</li>
-                <li>Bohrmaschine</li>
-                <li>Gewindestangen und Schrauben</li>
-              </ul>
+          <div id="moreDetailsColumn" class="hidden">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/SeitenWand_Prozess_Farbe.JPG"
+                alt="Materialien für Säulen: Schallrohre, Farben, Bohrmaschine"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                <ul class="list-disc list-inside">
+                  <li>3x Schallrohre mit 40cm Durchmesser</li>
+                  <li>Grundfarbe Seitenwände</li>
+                  <li>Malerrolle</li>
+                  <li>Bohrmaschine</li>
+                  <li>Gewindestangen und Schrauben</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/Säulen_Material.JPG"
-              alt="Bauprozess der Säulen: Grundierung und Befestigung"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Prozess</h3>
-              <ul class="list-disc list-inside">
-                <li>Grundieren</li>
-                <li>Gewindestangen befestigen</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/Säulen_Material.JPG"
+                alt="Bauprozess der Säulen: Grundierung und Befestigung"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Prozess</h3>
+                <ul class="list-disc list-inside">
+                  <li>Grundieren</li>
+                  <li>Gewindestangen befestigen</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-6 items-center">
-            <img
-              src="/img/Kreativwerkstatt/Säulen_Befestigung.JPG"
-              alt="Letzter Schliff an den Säulen: Montage und Sicherheitseinweisung"
-              class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-            />
-            <div class="pl-4">
-              <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
-              <ul class="list-disc list-inside">
-                <li>Säulen am Seilzug anbringen und ausrichten</li>
-                <li>Sicherheiseinweisung Schauspieler</li>
-              </ul>
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+              <img
+                src="/img/Kreativwerkstatt/Säulen_Befestigung.JPG"
+                alt="Letzter Schliff an den Säulen: Montage und Sicherheitseinweisung"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
+                <ul class="list-disc list-inside">
+                  <li>Säulen am Seilzug anbringen und ausrichten</li>
+                  <li>Sicherheiseinweisung Schauspieler</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -72,29 +72,43 @@
   <!-- Menu -->
   <div
     id="menu"
-    class="fixed top-[16px] right-0 z-10 hidden h-screen w-2/4 flex-col gap-2 bg-peach px-4 py-4 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none"
+    class="fixed top-[16px] right-0 z-40 hidden h-screen w-2/4 flex-col gap-2 bg-peach px-4 py-4 shadow-lg peer-checked:flex md:static md:flex md:h-auto md:w-auto md:flex-row md:items-center md:bg-transparent md:shadow-none"
   >
     <nav>
       <ul
         class="flex w-full flex-col gap-4 text-base text-gray-700 md:flex-row md:gap-6 md:pt-0"
       >
         <!-- Impressionen -->
-      <li class="group md:relative">
-  <a href="/src/page_1_last_theater.html" class="hover:text-peach">Impressionen</a>
-  <ul class="absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block">
-    <li>
-      <a href="/src/page_1_last_theater.html" class="text-#333 hover:bg-text-peach block rounded px-4 py-2 transition hover:text-white">Momo</a>
-    </li>
-  </ul>
-  <details class="md:hidden">
-    <summary class="hover:text-white cursor-pointer">Impressionen</summary>
-    <ul class="mt-2 ml-4 space-y-2">
-      <li>
-        <a href="/src/page_1_last_theater.html" class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white">Momo</a>
-      </li>
-    </ul>
-  </details>
-</li>
+        <li class="group md:relative">
+          <a href="/src/page_1_last_theater.html" class="hover:text-peach"
+            >Impressionen</a
+          >
+          <ul
+            class="absolute left-0 z-40 hidden min-w-[100px] rounded bg-peach shadow-lg group-hover:block"
+          >
+            <li>
+              <a
+                href="/src/page_1_last_theater.html"
+                class="text-#333 hover:bg-text-peach block rounded px-4 py-2 transition hover:text-white"
+                >Momo</a
+              >
+            </li>
+          </ul>
+          <details class="md:hidden">
+            <summary class="hover:text-white cursor-pointer">
+              Impressionen
+            </summary>
+            <ul class="mt-2 ml-4 space-y-2">
+              <li>
+                <a
+                  href="/src/page_1_last_theater.html"
+                  class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white"
+                  >Momo</a
+                >
+              </li>
+            </ul>
+          </details>
+        </li>
 
         <!-- Schauspiel -->
         <li class="group md:relative">
@@ -126,7 +140,7 @@
               >Schauspiel</a
             >
             <ul
-              class="absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block"
+              class="absolute left-0 z-40 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block"
             >
               <li>
                 <a
@@ -154,8 +168,9 @@
               class="text-color_primary hover:text-peach"
               >Kreativwerkstatt</a
             >
+
             <ul
-              class="absolute left-0 z-30 mt-2 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block"
+              class="absolute left-0 z-40 hidden min-w-[140px] rounded bg-peach shadow-lg group-hover:block"
             >
               <li>
                 <a
@@ -177,6 +192,21 @@
                   class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white"
                   >Bühne</a
                 >
+                <!-- </li>
+              <li>
+                <a
+                  href="/src/page_4_diy.html#requisites"
+                  class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white"
+                  >Requisiten</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/page_4_diy.html#stage-elements"
+                  class="hover:bg-text-peach block rounded px-4 py-2 hover:text-white"
+                  >Bühne</a
+                >
+              </li> -->
               </li>
             </ul>
           </div>
