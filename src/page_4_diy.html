@@ -23,7 +23,7 @@
 
     <nav
       id="local-navigation-diy"
-      class="sticky top-0 z-10 bg-white/70 flex gap-4 px-4 py-2 rounded-b-lg shadow mb-4"
+      class="sticky top-0 z-10 bg-white/70 flex gap-4 px-4 py-2 rounded-b-lg shadow "
     >
       <a
         href="#costume"
@@ -44,114 +44,133 @@
 
     <main class="bg-daisy">
       <article class="mx-auto max-w-5xl px-4 m-5">
+        <h1 class="text-3xl font-bold mb-6 text-darkerOlive text-center">
+          Kreativwerkstatt
+        </h1>
+        <h2 class="text-xl font-semibold mb-4 text-center text-darkerOlive">
+          DIY-Anleitungen für Kostüme, Requisiten und Bühnenbilder
+        </h2>
+
         <!-- Kostüme -->
         <section id="costume" class="pt-12">
-          <h1 class="sr-only">Kostüme</h1>
-      
+          <h3
+            class="text-xl font-semibold mb-4 text-center text-darkerOlive pt-10"
+          >
+            Kostüme
+          </h3>
+
+          <div class="grid md:grid-cols-2 gap-6 items-center p-8">
+            <img
+              src="/img/Kreativwerkstatt/Ergebnis_SchildkrötenPanzer.jpg"
+              alt="Fertiger Schildkrötenpanzer für Kassiopeia aus Schaumstoff"
+              class="w-2/3 md:w-2/ mx-auto rounded-lg shadow-lg"
+            />
+            <div class="pl-4">
+              <h2 class="text-xl font-bold mb-2">
+                Panzer für Schildkröte Kassiopeia
+              </h2>
+              <p>
+                Der Panzer der Schildkröte "Kassiopeia" besteht aus einem
+                leichten Schaumstoff. Wichtig ist hierbei, dass dieser nicht zu
+                groß ist, damit die Schauspielerin sich noch gut bewegen kann.
+                Wenn der Panzer jedoch zu klein ist, ist die Gefahr, dass er vom
+                Publikum nicht oder nur als Buckel wahrgenommen wird.
+              </p>
+              <div class="flex justify-center">
+                <button
+                  onclick="document.getElementById('moreDetails').classList.toggle('hidden')"
+                  class="mt-4 px-4 py-2 bg-peach text-white rounded hover:bg-olive transition"
+                >
+                  Mehr Details anzeigen
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Hidden content to expand -->
+          <div id="moreDetails" class="hidden">
             <div class="grid md:grid-cols-2 gap-6 items-center p-8">
               <img
-                src="/img/Kreativwerkstatt/Ergebnis_SchildkrötenPanzer.jpg"
-                alt="Fertiger Schildkrötenpanzer für Kassiopeia aus Schaumstoff"
+                src="/img/Kreativwerkstatt/Material_SchildkrötenPanzer.jpg"
+                alt="Materialien für den Schildkrötenpanzer: Schaumstoffmatten, Heißkleber, Farben, Gurtband"
                 class="w-2/3 md:w-1/2 mx-auto rounded-lg"
               />
               <div class="pl-4">
-                <h2 class="text-xl font-bold mb-2">
-                  Panzer für Schildkröte Kassiopeia
-                </h2>
-                <p>
-                  Der Panzer der Schildkröte "Kassiopeia" besteht aus einem
-                  leichten Schaumstoff. Wichtig ist hierbei, dass dieser nicht
-                  zu groß ist, damit die Schauspielerin sich noch gut bewegen
-                  kann. Wenn der Panzer jedoch zu klein ist, ist die Gefahr,
-                  dass er vom Publikum nicht oder nur als Buckel wahrgenommen
-                  wird.
-                </p>
-                <div class="flex justify-center">
-                  <button
-                    onclick="document.getElementById('moreDetails').classList.toggle('hidden')"
-                    class="mt-4 px-4 py-2 bg-peach text-white rounded hover:bg-olive transition"
-                  >
-                    Mehr Details anzeigen
-                  </button>
-                </div>
+                <h3 class="text-lg font-semibold mb-2">Materialien</h3>
+                <ul class="list-disc list-inside">
+                  <li>Schneidevorlage</li>
+                  <li>Schaumstoffmatten (Fußbodenmatte für Kinder)</li>
+                  <li>Heißkleber</li>
+                  <li>Acryl-Farben</li>
+                  <li>Gurtband</li>
+                  <li>Cuttermesser</li>
+                  <li>Schneideunterlage</li>
+                  <li>Schleifpapier</li>
+                </ul>
               </div>
             </div>
-            <!-- Hidden content to expand -->
-            <div id="moreDetails" class="hidden">
-              <div class="grid md:grid-cols-2 gap-6 items-center p-8">
-                <img
-                  src="/img/Kreativwerkstatt/Material_SchildkrötenPanzer.jpg"
-                  alt="Materialien für den Schildkrötenpanzer: Schaumstoffmatten, Heißkleber, Farben, Gurtband"
-                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-                />
-                <div class="pl-4">
-                  <h3 class="text-lg font-semibold mb-2">Materialien</h3>
-                  <ul class="list-disc list-inside">
-                    <li>Schneidevorlage</li>
-                    <li>Schaumstoffmatten (Fußbodenmatte für Kinder)</li>
-                    <li>Heißkleber</li>
-                    <li>Acryl-Farben</li>
-                    <li>Gurtband</li>
-                    <li>Cuttermesser</li>
-                    <li>Schneideunterlage</li>
-                    <li>Schleifpapier</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-6 items-center p-8">
-                <img
-                  src="/img/Kreativwerkstatt/Grundaufbau_SchildkrötenPanzer.jpg"
-                  alt="Grundaufbau des Schildkrötenpanzers: ausgeschnittene und zusammengeklebte Schaumstoffteile"
-                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-                />
-                <div class="pl-4">
-                  <h3 class="text-lg font-semibold mb-2">Grundaufbau</h3>
-                  <ul class="list-disc list-inside">
-                    <li>Schneidevorlagen ausschneiden und zusammenkleben</li>
-                    <li>Schneidevorlage auf Schaumstoff übertragen</li>
-                    <li>Alle Teile ausschneiden und beschriften</li>
-                    <li>Grundpanzer kleben</li>
-                    <li>Panzerschuppen abschleifen</li>
-                    <li>Panzerschuppen auf Grundpanzer kleben</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-6 items-center p-8">
-                <img
-                  src="/img/Kreativwerkstatt/Design_SchildkrötenPanzer.jpg"
-                  alt="Bemalung des Schildkrötenpanzers mit cremefarbener Grundierung und Details"
-                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-                />
-                <div class="pl-4">
-                  <h3 class="text-lg font-semibold mb-2">Farbgestaltung</h3>
-                  <ul class="list-disc list-inside">
-                    <li>Referenzbild suchen</li>
-                    <li>Grundieren (cremefarben)</li>
-                    <li>Grobstruktur</li>
-                    <li>Details</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="grid md:grid-cols-2 gap-6 items-center p-8">
-                <img
-                  src="/img/Kreativwerkstatt/LetzterSchliff_SchildkrötenPanzer.jpg"
-                  alt="Letzter Schliff am Schildkrötenpanzer: Gurtbänder und Anprobe"
-                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-                />
-                <div class="pl-4">
-                  <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
-                  <ul class="list-disc list-inside">
-                    <li>Gurtbänder anbringen</li>
-                    <li>Anprobe</li>
-                    <li>Belastungstest</li>
-                  </ul>
-                </div>
+            <div class="grid md:grid-cols-2 gap-6 items-center p-8">
+              <img
+                src="/img/Kreativwerkstatt/Grundaufbau_SchildkrötenPanzer.jpg"
+                alt="Grundaufbau des Schildkrötenpanzers: ausgeschnittene und zusammengeklebte Schaumstoffteile"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Grundaufbau</h3>
+                <ul class="list-disc list-inside">
+                  <li>Schneidevorlagen ausschneiden und zusammenkleben</li>
+                  <li>Schneidevorlage auf Schaumstoff übertragen</li>
+                  <li>Alle Teile ausschneiden und beschriften</li>
+                  <li>Grundpanzer kleben</li>
+                  <li>Panzerschuppen abschleifen</li>
+                  <li>Panzerschuppen auf Grundpanzer kleben</li>
+                </ul>
               </div>
             </div>
+            <div class="grid md:grid-cols-2 gap-6 items-center p-8">
+              <img
+                src="/img/Kreativwerkstatt/Design_SchildkrötenPanzer.jpg"
+                alt="Bemalung des Schildkrötenpanzers mit cremefarbener Grundierung und Details"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Farbgestaltung</h3>
+                <ul class="list-disc list-inside">
+                  <li>Referenzbild suchen</li>
+                  <li>Grundieren (cremefarben)</li>
+                  <li>Grobstruktur</li>
+                  <li>Details</li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 items-center p-8">
+              <img
+                src="/img/Kreativwerkstatt/LetzterSchliff_SchildkrötenPanzer.jpg"
+                alt="Letzter Schliff am Schildkrötenpanzer: Gurtbänder und Anprobe"
+                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+              />
+              <div class="pl-4">
+                <h3 class="text-lg font-semibold mb-2">Letzer Schliff</h3>
+                <ul class="list-disc list-inside">
+                  <li>Gurtbänder anbringen</li>
+                  <li>Anprobe</li>
+                  <li>Belastungstest</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <!-- Weste -->
+
           <div class="grid gap-8 mt-12">
             <div class="grid md:grid-cols-2 gap-6 items-center p-8">
-              <div class="pr-4">
+              <!-- Image: first on small screens, second on md and up -->
+              <img
+                src="/img/Kreativwerkstatt/Weste_Schildkröte.JPG"
+                alt="Fertige karierte Weste für die Schildkröte Kassiopeia"
+                class="order-1 md:order-2 w-2/3 mx-auto rounded-lg shadow-lg"
+              />
+
+              <!-- Text: second on small screens, first on md and up -->
+              <div class="order-2 md:order-1 pr-4">
                 <h2 class="text-xl font-bold mb-2">
                   Weste für Schildkröte Kassiopeia
                 </h2>
@@ -171,12 +190,8 @@
                   </button>
                 </div>
               </div>
-              <img
-                src="/img/Kreativwerkstatt/Weste_Schildkröte.JPG"
-                alt="Fertige karierte Weste für die Schildkröte Kassiopeia"
-                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-              />
             </div>
+
             <div id="moreDetailsWeste" class="hidden">
               <div class="grid md:grid-cols-2 gap-6 items-center p-8">
                 <div class="pr-4">
@@ -235,7 +250,7 @@
               <img
                 src="/img/Kreativwerkstatt/03_Bibigirl_Bühne.JPG"
                 alt="Fertiges Kleid für Bibigirl mit Glitzerstoff und silbernem Netz"
-                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+                class="w-2/3 md:w-2/3 mx-auto rounded-lg shadow-lg"
               />
               <div class="pl-4">
                 <h2 class="text-xl font-bold mb-2">
@@ -312,10 +327,19 @@
         </section>
         <!-- Requisiten -->
         <section id="requisites" class="pt-12">
-          <h1 class="sr-only">Requisiten</h1>
+          <h3
+            class="text-xl font-semibold mb-4 text-center text-darkerOlive pt-10"
+          >
+            Requisiten
+          </h3>
           <div class="grid gap-8">
             <div class="grid md:grid-cols-2 gap-6 items-center p-8">
-              <div class="pr-4">
+              <img
+                src="/img/Kreativwerkstatt/Blumen_Dunkel.JPG"
+                alt="Leuchtende Stundenblumen im Dunkeln mit LED-Effekt"
+                class="order-1 md:order-2 w-2/3 mx-auto rounded-lg shadow-lg"
+              />
+              <div class="order-2 md:order-1 pr-4">
                 <h2 class="text-xl font-bold mb-2">
                   Leuchtende "Stundenblumen"
                 </h2>
@@ -333,11 +357,6 @@
                   </button>
                 </div>
               </div>
-              <img
-                src="/img/Kreativwerkstatt/Blumen_Dunkel.JPG"
-                alt="Leuchtende Stundenblumen im Dunkeln mit LED-Effekt"
-                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-              />
             </div>
             <div id="moreDetailsFlower" class="hidden">
               <div class="grid md:grid-cols-2 gap-6 items-center p-8">
@@ -395,7 +414,7 @@
                 <img
                   src="/img/Kreativwerkstatt/Blumen_Hell.JPG"
                   alt="Stundenblumen bei Tageslicht auf der Bühne"
-                  class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+                  class="w-2/3 md:w-2/3 mx-auto rounded-lg shadow-lg"
                 />
                 <div class="pl-4">
                   <h2 class="text-xl font-bold mb-2">Uhren bei Meister Hora</h2>
@@ -473,10 +492,19 @@
         </section>
         <!-- Bühnen Elemente -->
         <section id="stage-elements" class="pt-12">
-          <h1 class="sr-only">Bühnen Elemente</h1>
+          <h3
+            class="text-xl font-semibold mb-4 text-center text-darkerOlive pt-10"
+          >
+            Bühnen Elemente
+          </h3>
           <div class="grid gap-8">
             <div class="grid md:grid-cols-2 gap-6 items-center p-8">
-              <div class="pr-4">
+              <img
+                src="/img/Kreativwerkstatt/Bühne_SeitenTeileSäulen.JPG"
+                alt="Seitenwände des Amphitheaters als Bühnenhintergrund"
+                class="order-1 md:order-2 w-2/3 mx-auto rounded-lg shadow-lg"
+              />
+              <div class="order-2 md:order-1 pr-4">
                 <h2 class="text-xl font-bold mb-2">
                   Seitenwände "Amphitheater"
                 </h2>
@@ -493,11 +521,6 @@
                   </button>
                 </div>
               </div>
-              <img
-                src="/img/Kreativwerkstatt/Bühne_SeitenTeileSäulen.JPG"
-                alt="Seitenwände des Amphitheaters als Bühnenhintergrund"
-                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
-              />
             </div>
             <div id="moreDetailsPainting" class="hidden">
               <div class="grid md:grid-cols-2 gap-6 items-center p-8">
@@ -565,7 +588,7 @@
               <img
                 src="/img/Kreativwerkstatt/Säulen_Bühne.JPG"
                 alt="Säulen des Amphitheaters auf der Bühne"
-                class="w-2/3 md:w-1/2 mx-auto rounded-lg"
+                class="w-2/3 md:w-2/3 mx-auto rounded-lg shadow-lg"
               />
               <div class="pl-4">
                 <h2 class="text-xl font-bold mb-2">Säulen des Amphitheaters</h2>
@@ -589,7 +612,7 @@
             <div id="moreDetailsColumn" class="hidden">
               <div class="grid md:grid-cols-2 gap-6 items-center p-8">
                 <img
-                  src="/img/Kreativwerkstatt/SeitenWand_Prozess_Farbe.JPG"
+                  src="/img/Kreativwerkstatt/Säulen_Material.JPG"
                   alt="Materialien für Säulen: Schallrohre, Farben, Bohrmaschine"
                   class="w-2/3 md:w-1/2 mx-auto rounded-lg"
                 />
@@ -606,7 +629,7 @@
               </div>
               <div class="grid md:grid-cols-2 gap-6 items-center p-8">
                 <img
-                  src="/img/Kreativwerkstatt/Säulen_Material.JPG"
+                  src="/img/Kreativwerkstatt/SeitenWand_Prozess_Farbe.JPG"
                   alt="Bauprozess der Säulen: Grundierung und Befestigung"
                   class="w-2/3 md:w-1/2 mx-auto rounded-lg"
                 />
