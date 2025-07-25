@@ -12,7 +12,7 @@
       name="keywords"
       content="Momo, Theater, Neuburg, Michael Ende, Aufführung, Schauspieler, Proben, Bühnenbau, Kreativwerkstatt, Zeitungsartikel, Podcast"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/js/include.js" defer></script>
     <link href="./output.css" rel="stylesheet" />
     <title>Momo</title>
@@ -26,7 +26,7 @@
       </h1>
       <section
         id="Infos"
-        class="mb-8 bg-fixed bg-cover bg-center bg-[url('/img/Momo/Hintergrund_website.jpg')] rounded-lg shadow"
+        class="mb-8 bg-fixed bg-cover bg-[position:right_center] bg-[url('/img/Momo/Hintergrund_website.jpg')] rounded-lg shadow"
         style="height: 75vh"
       >
         <div class="bg-white/80 md:w-1/2 h-full rounded-md">
@@ -37,7 +37,7 @@
             </h3>
             <p class="text-gray-800">Stadttheater Neuburg</p>
             <p class="text-gray-800 mb-2">Ostern 2025</p>
-            <p class="text-gray-900">
+            <p class="text-gray-900 mt-10">
               Das Theaterstück "Momo" erzählt die Geschichte eines Mädchens, das
               mit Hilfe ihrer Freunde gegen die Zeitdiebe kämpft. Die
               Inszenierung bringt Michael Endes Klassiker mit viel Fantasie und
@@ -57,7 +57,7 @@
             alt="Regieteam"
             class="rounded-lg mb-2 w-80 h-80 object-cover"
           />
-          <figcaption class="text-sm text-gray-600 p-4">
+          <figcaption class="text-base text-darkerOlive p-4">
             Regieteam:<br />
             Sebastian, Lorena, Tamara
           </figcaption>
@@ -71,7 +71,7 @@
             alt="Bühne"
             class="rounded-lg mb-2 w-80 h-80 object-cover"
           />
-          <figcaption class="text-sm text-gray-600 p-4">
+          <figcaption class="text-base text-darkerOlive p-4">
             Stadttheater Neuburg
           </figcaption>
         </figure>
@@ -84,7 +84,7 @@
             alt="Gruppenbild Momo"
             class="rounded-lg mb-2 w-90 object-cover"
           />
-          <figcaption class="text-center text-sm text-gray-600 p-4">
+          <figcaption class="text-center text-base text-darkerOlive p-4">
             Darsteller des Jugendtheaters Neuburg
           </figcaption>
         </figure>
@@ -104,38 +104,44 @@
         </div>
       </section>
 
-      <section id="medien" class="mb-10">
-        <h2 class="text-2xl text-center font-bold text-darkerOlive mb-6">
+      <section id="medien" class="my-10">
+        <h2 class="text-4xl text-center font-bold text-darkerOlive mb-6">
           Zeitungsartikel &amp; Podcast
         </h2>
         <div class="flex flex-wrap gap-10 mb-8 justify-center">
-          <div class="bg-white rounded-lg p-4 flex flex-col items-center w-60">
+          <div
+            class="bg-white rounded-lg p-4 flex flex-col justify-between items-center w-60"
+          >
             <img
               src="/img/Momo/Artikel_Neuburger_Rundschau_Nachbericht.jpg"
               alt="Zeitungsartikel Momo"
               class="rounded mb-2 w-48 h-48 object-cover"
             />
             <p class="mb-2 text-center">Bericht der Neuburger Rundschau</p>
-            <a
-              href="https://www.augsburger-allgemeine.de/neuburg/neuburg-momo-verzaubert-im-stadttheater-108938014"
-              target="_blank"
-            >
-              <button
-                type="button"
-                class="justify-end items-end px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+            <div class="flex justify-center mt-4">
+              <a
+                href="https://www.augsburger-allgemeine.de/neuburg/neuburg-momo-verzaubert-im-stadttheater-108938014"
+                target="_blank"
               >
-                Artikel lesen
-              </button>
-            </a>
+                <button
+                  type="button"
+                  class="justify-end items-end px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                >
+                  Artikel lesen
+                </button>
+              </a>
+            </div>
           </div>
-          <div class="bg-white rounded-lg p-4 flex flex-col items-center w-60">
+          <div
+            class="bg-white rounded-lg p-4 flex flex-col justify-between items-center w-60"
+          >
             <img
               src="/img/Momo/Artikel_Donaukurier.jpg"
               alt="Zeitungsartikel Momo"
               class="rounded mb-2 w-48 h-48 object-cover"
             />
             <p class="mb-2 text-center">Bericht Donaukurier</p>
-            <div class="content-end">
+            <div class="flex justify-center mt-4">
               <a
                 href="https://www.augsburger-allgemeine.de/neuburg/kultur/theater-momo-zeigt-was-im-leben-wirklich-zaehlt-id70123456"
                 target="_blank"
@@ -149,24 +155,28 @@
               </a>
             </div>
           </div>
-          <div class="bg-white rounded-lg p-4 flex flex-col items-center w-60">
+          <div
+            class="bg-white rounded-lg p-4 flex flex-col justify-between items-center w-60"
+          >
             <img
               src="/img/Momo/Artikel_Bayern_Mittendrin.jpg"
               alt="Zeitungsartikel Momo"
               class="rounded mb-2 w-48 h-48 object-cover"
             />
             <p class="mb-2 text-center">Bericht Bayern Mittendrin</p>
-            <a
-              href="https://www.augsburger-allgemeine.de/neuburg/kultur/theater-momo-zeigt-was-im-leben-wirklich-zaehlt-id70123456"
-              target="_blank"
-            >
-              <button
-                type="button"
-                class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+            <div class="flex justify-center mt-4">
+              <a
+                href="https://www.augsburger-allgemeine.de/neuburg/kultur/theater-momo-zeigt-was-im-leben-wirklich-zaehlt-id70123456"
+                target="_blank"
               >
-                Artikel lesen
-              </button>
-            </a>
+                <button
+                  type="button"
+                  class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                >
+                  Artikel lesen
+                </button>
+              </a>
+            </div>
           </div>
         </div>
         <div class="p-6 flex flex-col items-center max-w-xl mx-auto">
@@ -196,7 +206,7 @@
             class="flex flex-col justify-between p-4 border rounded shadow"
           >
             <div>
-              <h2 class="text-xl font-bold text-olive text-center mb-2">
+              <h2 class="text-xl font-bold text-darkerOlive text-center mb-2">
                 Blick in die Probevorbereitungen
               </h2>
               <p class="text-center px-2 pb-3">
@@ -223,7 +233,7 @@
             class="flex flex-col justify-between p-4 border rounded shadow"
           >
             <div>
-              <h2 class="text-xl font-bold text-olive text-center mb-2">
+              <h2 class="text-xl font-bold text-darkerOlive text-center mb-2">
                 Blick in die Kreativwerkstatt
               </h2>
               <p class="text-center px-2 pb-3">
@@ -249,7 +259,7 @@
             class="flex flex-col justify-between p-4 border rounded shadow"
           >
             <div>
-              <h2 class="text-xl font-bold text-olive text-center mb-2">
+              <h2 class="text-xl font-bold text-darkerOlive text-center mb-2">
                 Blick in den Bühnenbau
               </h2>
               <p class="text-center px-2 pb-3">
@@ -272,94 +282,117 @@
         </div>
       </article>
 
-      <section id="Szenen" class="mb-10">
-        <h3 class="text-3xl font-bold text-peach mb-6 text-center">
+      <section id="Szenen" class="my-10">
+        <h3 class="text-4xl font-bold text-peach mb-6 text-center">
           Einblick in die Szenen von Momo
         </h3>
         <div class="">
-          <figure class="flex flex-row md:justify-start items-center p-4">
+          <figure
+            class="flex flex-col md:flex-row md:justify-start items-center p-4"
+          >
             <img
-              src="/img/Momo/01_Szene_Momo%20und%20Freunde.png"
+              src="/img/Momo/01_Szene_Momo%20und%20Freunde.jpg"
               alt="Szene: Momo und Freunde"
-              class="rounded mb-2 w-40 h-40 object-cover"
+              class="rounded mb-2 w-60 h-60 object-cover"
             />
-            <figcaption class="text text-sm text-gray-600 p-4">
+            <figcaption class="text text-base text-darkerOlive p-4">
               Momo lebt im Amphitheater mit ihren Freunden
             </figcaption>
           </figure>
-          <figure class="flex flex-row md:justify-center items-center p-4">
+          <figure
+            class="flex flex-col md:flex-row md:justify-center items-center p-4"
+          >
             <img
-              src="/img/Momo/02_Szene_Graue%20Herren.png"
+              src="/img/Momo/02_Szene_Graue%20Herren.jpg"
               alt="Szene: Graue Herren"
-              class="rounded mb-2 w-40 h-40 object-cover"
+              class="rounded mb-2 w-60 h-60 object-cover"
             />
-            <figcaption class="text-center text-sm text-gray-600 p-4">
+            <figcaption class="text-center text-base text-darkerOlive p-4">
               Die Grauen Herren übernehmen immer mehr der Kontrolle
             </figcaption>
           </figure>
-          <figure class="flex flex-row md:justify-end items-center p-4">
+          <figure
+            class="flex flex-col md:flex-row md:justify-end items-center p-4"
+          >
             <img
-              src="/img/Momo/03_Szene_Graue%20Herren%20Flucht.png"
+              src="/img/Momo/03_Szene_Graue%20Herren%20Flucht.jpg"
               alt="Szene: Graue Herren Flucht"
-              class="rounded mb-2 w-40 h-40 object-cover"
+              class="rounded mb-2 w-60 h-60 object-cover"
             />
-            <figcaption class="text-center text-sm text-gray-600 p-4">
+            <figcaption class="text-center text-base text-darkerOlive p-4">
               Die Grauen Herren besuchen Momo und sie muss fliehen
             </figcaption>
           </figure>
-          <figure class="flex flex-row md:justify-center items-center p-4">
+          <figure
+            class="flex flex-col md:flex-row md:justify-center items-center p-4"
+          >
             <img
-              src="/img/Momo/04_Szene_Momo_bei%20Hora.png"
+              src="/img/Momo/04_Szene_Momo_bei%20Hora.jpg"
               alt="Szene: Momo bei Hora"
-              class="rounded mb-2 w-40 h-40 object-cover"
+              class="rounded mb-2 w-60 h-60 object-cover"
             />
-            <figcaption class="text-center text-sm text-gray-600 p-4">
+            <figcaption class="text-center text-base text-darkerOlive p-4">
               Meister Hora bietet ihr Schutz und erklärt die Stundenblumen
             </figcaption>
           </figure>
-          <figure class="flex flex-row md:justify-start items-center p-4">
+          <figure
+            class="flex flex-col md:flex-row md:justify-start items-center p-4"
+          >
             <img
-              src="/img/Momo/05_Szene_Momo_ist%20wieder%20zu%20Hause.png"
+              src="/img/Momo/05_Szene_Momo_ist%20wieder%20zu%20Hause.jpg"
               alt="Szene: Momo ist wieder zu Hause"
-              class="rounded mb-2 w-40 h-40 object-cover"
+              class="rounded mb-2 w-60 h-60 object-cover"
             />
-            <figcaption class="text-center text-sm text-gray-600 p-4">
+            <figcaption class="text-center text-base text-darkerOlive p-4">
               Momo kehrt zurück und alle ihre Freunde sind weg
             </figcaption>
           </figure>
-          <figure class="flex flex-row md:justify-center items-center p-4">
+          <figure
+            class="flex flex-col md:flex-row md:justify-center items-center p-4"
+          >
             <img
-              src="/img/Momo/06_Szene_Momo_und%20Kassiopeia%20bei%20Hora.png"
+              src="/img/Momo/06_Szene_Momo_und%20Kassiopeia%20bei%20Hora.jpg"
               alt="Szene: Momo und Kassiopeia bei Hora"
-              class="rounded mb-2 w-40 h-40 object-cover"
+              class="rounded mb-2 w-60 h-60 object-cover"
             />
-            <figcaption class="text-center text-sm text-gray-600 p-4">
+            <figcaption class="text-center text-base text-darkerOlive p-4">
               Zusammen mit Kassiopeia und Meister Hora schmiedet sie einen Plan
               gegen die Grauen Herren
             </figcaption>
           </figure>
-          <figure class="flex flex-row md:justify-end items-center p-4">
+          <figure
+            class="flex flex-col md:flex-row md:justify-end items-center p-4"
+          >
             <img
-              src="/img/Momo/07_Szene_Momo_und%20die%20Grauen%20Herren%20Finale.png"
+              src="/img/Momo/07_Szene_Momo_und%20die%20Grauen%20Herren%20Finale.jpg"
               alt="Szene: Momo und die Grauen Herren Finale"
-              class="rounded mb-2 w-40 h-40 object-cover"
+              class="rounded mb-2 w-60 h-60 object-cover"
             />
-            <figcaption class="text-center text-sm text-gray-600 p-4">
+            <figcaption class="text-center text-base text-darkerOlive p-4">
               Spektakuläre Rettungsaktion im Hauptlager der Grauen Herren
             </figcaption>
           </figure>
           <figure class="flex flex-col md:justify-center items-center p-4">
             <img
-              src="/img/Momo/08_Szene_Momo_Alle%20Glücklich_Ende.png"
+              src="/img/Momo/08_Szene_Momo_Alle%20Glücklich_Ende.jpg"
               alt="Szene: Momo Alle Glücklich Ende"
-              class="rounded mb-2 w-80 h-80 object-cover"
+              class="rounded mb-2 w-112 h-63 object-cover"
             />
-            <figcaption class="text-center text-sm text-gray-600 p-4">
+            <figcaption class="text-center text-base text-darkerOlive p-4">
               Alle wieder vereint
             </figcaption>
           </figure>
         </div>
       </section>
+
+      <div class="text-center my-10">
+        <button
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+          class="px-6 py-3 mb-5 bg-peach text-daisy font-semibold rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+        >
+          ↑ Zurück nach oben
+        </button>
+      </div>
     </main>
 
     <footer id="footer-placeholder"></footer>
