@@ -21,12 +21,12 @@
     <header id="header-placeholder" class="sticky top-0"></header>
 
     <main class="bg-daisy">
-      <h1 class="text-4xl font-extrabold text-peach p-10 text-center">
+      <h1 class="text-4xl font-extrabold text-darkerOlive p-10 text-center">
         Impressionen der letzen Aufführung
       </h1>
       <section
-        id="Infos"
-        class="mb-8 bg-fixed bg-cover bg-[position:right_center] bg-[url('/img/Momo/Hintergrund_website.jpg')] rounded-lg shadow"
+        id="Infos" 
+        class="mb-8 bg-fixed bg-cover bg-[position:right_center] bg-[url('/img/Momo/Hintergrund_website_smaller.jpg')] md:bg-[url('/img/Momo/Hintergrund_website.jpg')] rounded-lg shadow"
         style="height: 75vh"
       >
         <div class="bg-white/80 md:w-1/2 h-full rounded-md">
@@ -50,7 +50,7 @@
       <section id="kurzbeschreibung" class="gap-8 mb-10 items-start">
         <figure
           id="momo-regie"
-          class="flex flex-col items-start rounded-lg m-10 p-4"
+          class="flex flex-col items-center md:items-start rounded-lg m-10 p-4"
         >
           <img
             src="/img/Momo/Momo_regieteam.jpg"
@@ -64,7 +64,7 @@
         </figure>
         <figure
           id="theater-buehne"
-          class="flex flex-col items-end rounded-lg m-10 p-4"
+          class="flex flex-col items-center md:items-end rounded-lg m-10 p-4"
         >
           <img
             src="/img/Momo/Stadttheater_Bühne.jpg"
@@ -80,9 +80,12 @@
           class="flex flex-col items-center rounded-lg p-4"
         >
           <img
+            loading="lazy"
             src="/img/Startseite/Gruppenbild_Momo.jpg"
             alt="Gruppenbild Momo"
-            class="rounded-lg mb-2 w-90 object-cover"
+            width="600px"
+            height="452px"
+            class="rounded-lg mb-2 object-cover"
           />
           <figcaption class="text-center text-base text-darkerOlive p-4">
             Darsteller des Jugendtheaters Neuburg
@@ -96,7 +99,7 @@
           >
             <button
               type="button"
-              class="px-4 font-bold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+              class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-daisy hover:text-darkerOlive transition hover:scale-105"
             >
               Mehr von den Schauspielern erfahren
             </button>
@@ -115,7 +118,7 @@
             <img
               src="/img/Momo/Artikel_Neuburger_Rundschau_Nachbericht.jpg"
               alt="Zeitungsartikel Momo"
-              class="rounded mb-2 w-48 h-48 object-cover"
+              class="rounded mb-2 w-20 md:w-48 h-20 md:h-48 object-cover"
             />
             <p class="mb-2 text-center">Bericht der Neuburger Rundschau</p>
             <div class="flex justify-center mt-4">
@@ -125,7 +128,7 @@
               >
                 <button
                   type="button"
-                  class="justify-end items-end px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                  class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-white hover:text-darkerOlive transition hover:scale-105"
                 >
                   Artikel lesen
                 </button>
@@ -138,7 +141,7 @@
             <img
               src="/img/Momo/Artikel_Donaukurier.jpg"
               alt="Zeitungsartikel Momo"
-              class="rounded mb-2 w-48 h-48 object-cover"
+              class="rounded mb-2 w-20 md:w-48 h-20 md:h-48 object-cover"
             />
             <p class="mb-2 text-center">Bericht Donaukurier</p>
             <div class="flex justify-center mt-4">
@@ -148,7 +151,7 @@
               >
                 <button
                   type="button"
-                  class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                  class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-white hover:text-darkerOlive transition hover:scale-105"
                 >
                   Artikel lesen
                 </button>
@@ -161,7 +164,7 @@
             <img
               src="/img/Momo/Artikel_Bayern_Mittendrin.jpg"
               alt="Zeitungsartikel Momo"
-              class="rounded mb-2 w-48 h-48 object-cover"
+              class="rounded mb-2 w-20 md:w-48 h-20 md:h-48 object-cover"
             />
             <p class="mb-2 text-center">Bericht Bayern Mittendrin</p>
             <div class="flex justify-center mt-4">
@@ -171,7 +174,7 @@
               >
                 <button
                   type="button"
-                  class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                  class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-white hover:text-darkerOlive transition hover:scale-105"
                 >
                   Artikel lesen
                 </button>
@@ -191,7 +194,7 @@
           >
             <button
               type="button"
-              class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+              class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-daisy hover:text-darkerOlive transition hover:scale-105"
             >
               Zur Website des Podcastes
             </button>
@@ -220,7 +223,7 @@
               <a href="page_2_acting.html">
                 <button
                   type="button"
-                  class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                  class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-daisy hover:text-darkerOlive transition hover:scale-105"
                 >
                   Infos zu den Proben
                 </button>
@@ -246,7 +249,7 @@
               <a href="page_4_diy.html">
                 <button
                   type="button"
-                  class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                  class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-daisy hover:text-darkerOlive transition hover:scale-105"
                 >
                   zur Kreativwerkstatt
                 </button>
@@ -272,7 +275,7 @@
               <a href="page_4_stage_elements.html">
                 <button
                   type="button"
-                  class="px-4 font-semibold py-2 bg-peach text-daisy rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+                  class="px-4 font-semibold py-2 bg-peach text-black rounded hover:bg-daisy hover:text-darkerOlive transition hover:scale-105"
                 >
                   Mehr zu den Bühnenelementen
                 </button>
@@ -283,7 +286,7 @@
       </article>
 
       <section id="Szenen" class="my-10">
-        <h3 class="text-4xl font-bold text-peach mb-6 text-center">
+        <h3 class="text-4xl font-bold text-darkerOlive mb-6 text-center">
           Einblick in die Szenen von Momo
         </h3>
         <div class="">
@@ -388,7 +391,7 @@
       <div class="text-center my-10">
         <button
           onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-          class="px-6 py-3 mb-5 bg-peach text-daisy font-semibold rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+          class="px-6 py-3 mb-5 bg-peach text-black font-semibold rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
         >
           ↑ Zurück nach oben
         </button>

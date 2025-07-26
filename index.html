@@ -20,20 +20,21 @@
   <body class="bg-gray-50 text-gray-900">
     <header id="header-placeholder" class="sticky top-0"></header>
     <main>
+   
       <section
         id="hero"
-        class="flex flex-col md:flex-row items-center md:justify-between gap-8 py-8 px-4 bg-gradient-to-r from-peach to-daisy bg-fixed"
+        class="flex flex-col md:flex-row items-center md:items-center md:justify-between gap-8 py-8 px-4 bg-gradient-to-r from-peach to-daisy bg-fixed"
       >
         <img
           id="group-photo"
           loading="lazy"
           src="/img/Startseite/Gruppenbild_Momo.jpg"
           alt="Gruppenbild Jugendtheater bei der Aufführung Momo 2025"
-          width="600px"
-          height="452px"
-          class="rounded-lg shadow-lg mb-5 "
+          class="w-full md:w-1/2 max-w-full rounded-lg shadow-lg mb-5 md:mb-0"
         />
-        <div class="flex flex-col items-center sm:ml-6">
+        <div
+          class="w-full md:w-1/2 flex flex-col items-center justify-center sm:ml-6"
+        >
           <img
             class="logo rounded-full mb-3"
             src="/img/Header_Footer/Logo_Jugendtheater.jpg"
@@ -243,6 +244,8 @@
         <img
           src="/img/Startseite/Blick_hinter_die Kulissen.jpg"
           alt="Gruppenbild Jugendtheater bei der Aufführung Momo 2025"
+          width="240px"
+          height="320px"
           class="rounded-lg shadow-lg w-60 h-75 object-cover"
         />
       </section>
@@ -254,10 +257,10 @@
         <img
           src="/img/Startseite/Box15.png"
           alt="Blick in die Box 15"
-          class="rounded-lg shadow w-60 h-80 object-cover mb-4 md:mb-0"
+          class="rounded-lg shadow w-60 h-60 mb-4 md:mb-0"
         />
         <div>
-          <h2 class="text-2xl font-bold mb-2 text-rose">Box 15</h2>
+          <h2 class="text-2xl font-bold mb-2 text-peach">Box 15</h2>
           <p class="mb-2">
             Unsere Proberäume und kleine Bühne mit 60 Zuschauerplätzen.
           </p>
@@ -274,7 +277,7 @@
       </section>
 
       <section id="last-event" class="max-w-4xl mx-auto my-12">
-        <h2 class="text-2xl font-bold mb-6 text-center text-peach">
+        <h2 class="text-2xl font-bold mb-6 text-center text-darkerOlive">
           Unsere letzten Aufführungen
         </h2>
         <div class="grid md:grid-cols-2 gap-8">
@@ -301,6 +304,7 @@
             <figure class="flex-1 mb-4 md:mb-0 md:mr-4">
               <picture>
                 <img
+                  loading="lazy"
                   src="/img/Startseite/Plakat_Momo_smaller.JPG"
                   alt="Plakat Momo 2025"
                   class="rounded-lg shadow w-64 h-36 md:hidden"
@@ -308,7 +312,7 @@
                 <img
                   src="/img/Startseite/Plakat_Momo.JPG"
                   alt="Plakat Momo 2025"
-                  class="rounded-lg shadow w-20 h-26.5 hidden md:block"
+                  class="rounded-lg shadow w-40 hidden md:block"
                 />
               </picture>
               <figcaption class="text-center text-sm text-gray-500 mt-2">
@@ -330,6 +334,7 @@
             <figure class="flex-1 mb-4 md:mb-0 md:mr-4">
               <picture>
                 <img
+                  loading="lazy"
                   src="/img/Startseite/Plakat_Gott_des_Gemetzels_smaller.JPG"
                   alt="Plakat Gott des Gemetzels 2025"
                   class="rounded-lg shadow w-64 h-36 md:hidden"
@@ -337,7 +342,7 @@
                 <img
                   src="/img/Startseite/Plakat_Gott_des_Gemetzels.JPG"
                   alt="Plakat Gott des Gemetzels 2025"
-                  class="rounded-lg shadow w-20 h-26.5 hidden md:block"
+                  class="rounded-lg shadow w-40 hidden md:block"
                 />
               </picture>
               <figcaption class="text-center text-sm text-gray-500 mt-2">
@@ -350,7 +355,7 @@
       <div class="text-center my-10">
         <button
           onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-          class="px-6 py-3 mb-5 bg-peach text-daisy font-semibold rounded hover:bg-daisy hover:text-peach transition hover:scale-105"
+          class="px-6 py-3 mb-5 bg-peach text-black font-semibold rounded hover:bg-golden hover:text-peach transition hover:scale-105"
         >
           ↑ Zurück nach oben
         </button>
