@@ -58,9 +58,9 @@ webprogrammierung-Lorena51/
 ## 👩‍💻 Autorin
 
 **Lorena Heindl**  
-Letztes Update: Juni 2025
+Letztes Update: Juli 2025
 
 ---
 
 > Viel Spaß beim Erkunden der Website! 🎉
-> Website: https://iu-webprogrammierung.github.io/webprogrammierung-Lorena51/
+
